@@ -89,14 +89,6 @@
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+alt+e",
-    "command": "codeium.explainCodeBlock"
-  },
-  {
-    "key": "ctrl+alt+w",
-    "command": "codeium.refactorCodeBlock"
-  },
-  {
     "key": "ctrl+shift+alt+h",
     "command": "extension.git-file-history"
   },
@@ -377,16 +369,11 @@
     "when": "editorHasImplementationProvider && editorTextFocus"
   },
   {
-    "key": "alt+n r",
-    "command": "editor.action.goToReferences",
-    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-  },
-  {
     "key": "alt+n h",
     "command": "editor.action.showDefinitionPreviewHover"
   },
   {
-    "key": "alt+u",
+    "key": "alt+u alt+u",
     "command": "editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
@@ -401,7 +388,7 @@
     "when": "inReferenceSearchEditor || referenceSearchVisible"
   },
   {
-    "key": "alt+u",
+    "key": "alt+u alt+u",
     "command": "closeReferenceSearch",
     "when": "editorTextFocus && referenceSearchVisible && !config.editor.stablePeek || referenceSearchVisible && !config.editor.stablePeek && !inputFocus"
   },
@@ -456,18 +443,9 @@
     "command": "-workbench.action.quit"
   },
   {
-    "key": "alt+,",
-    "command": "-codeium.showPreviousCortexStep"
-  },
-  {
     "key": "alt+.",
     "command": "-auto-close-tag.closeTag"
   },
-  {
-    "key": "alt+.",
-    "command": "-codeium.showNextCortexStep"
-  },
-  //delete
   {
     "key": "alt+b",
     "command": "deleteLeft",
@@ -514,12 +492,6 @@
     "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
-  {
-    "key": "alt+f",
-    "command": "-codeium.diffActionFollowup",
-    "when": "editorTextFocus && !inlineSuggestionsVisible"
-  },
-  //nvim
   {
     "command": "editor.action.moveLinesUpAction",
     "key": "alt+k",
@@ -1114,11 +1086,6 @@
   {
     "key": "alt+a w",
     "command": "editor.emmet.action.wrapWithAbbreviation"
-  },
-  {
-    "key": "alt+a",
-    "command": "-codeium.diffActionAccept",
-    "when": "editorTextFocus && !inlineSuggestionsVisible"
   },
   {
     "key": "alt+a alt+s",
@@ -1795,5 +1762,75 @@
     "key": "alt+o o",
     "command": "workbench.action.showOutputChannels",
     "when": "inOutput"
+  },
+  //codeium
+  {
+    "key": "alt+o u",
+    "command": "codeium.openCodeiumCommand",
+    "when": "codeium.commandEnabled && editorTextFocus"
+  },
+  {
+    "key": "alt+u alt+l",
+    "command": "codeium.chatAboutBlock",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+l",
+    "command": "-codeium.chatAboutBlock",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+u alt+a",
+    "command": "codeium.diffActionAccept",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+a",
+    "command": "-codeium.diffActionAccept",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+u alt+f",
+    "command": "codeium.diffActionFollowup",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+f",
+    "command": "-codeium.diffActionFollowup",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+u alt+r",
+    "command": "codeium.diffActionReject",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+r",
+    "command": "-codeium.diffActionReject",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+u alt+c",
+    "command": "codeium.cancelCodeiumCommand",
+    "when": "codeium.commandEnabled && editorTextFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "-codeium.cancelCodeiumCommand",
+    "when": "codeium.commandEnabled && editorTextFocus"
+  },
+  {
+    "key": "alt+u c",
+    "command": "codeium.openChatView",
+    "when": "true"
+  },
+  {
+    "key": "alt+u v",
+    "command": "workbench.view.extension.codeium"
+  },
+  {
+    "key": "alt+u c",
+    "command": "workbench.action.quickOpen",
+    "args": ">codeium "
   }
 ]
