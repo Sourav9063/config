@@ -501,6 +501,8 @@
     "unknown": "off"
   },
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "github.copilot.editor.enableAutoCompletions": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
