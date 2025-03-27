@@ -30,7 +30,6 @@
   "keyboard.dispatch": "keyCode",
   "git.ignoreMissingGitWarning": true,
   "editor.wordWrapColumn": 40,
-  "files.autoSaveDelay": 100,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -492,7 +491,6 @@
   "files.autoSave": "onFocusChange",
   "search.smartCase": true,
   "search.sortOrder": "fileNames",
-  "workbench.quickOpen.closeOnFocusLost": false,
   "search.seedOnFocus": true,
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.suggest.quickSuggestions": {
@@ -501,8 +499,9 @@
     "unknown": "off"
   },
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "editor.minimap.enabled": false,
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
-  "github.copilot.editor.enableAutoCompletions": false
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.minimap.enabled": false,
+  "editor.wordBasedSuggestions": "allDocuments"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

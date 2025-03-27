@@ -891,6 +891,18 @@
     "key": "alt+o l",
     "command": "workbench.action.customizeLayout"
   },
+  {
+    "key": "alt+o alt+e",
+    "command": "workbench.action.openQuickChat"
+  },
+  {
+    "key": "alt+o m",
+    "command": "workbench.action.quickOpenWithModes"
+  },
+  {
+    "key": "alt+o alt+r",
+    "command": "workbench.action.quickOpenRecent"
+  },
   //focus
   {
     "key": "alt+f e",
@@ -1268,11 +1280,6 @@
   },
   {
     "key": "alt+i l",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "alt+shift+enter",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
