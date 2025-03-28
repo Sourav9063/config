@@ -202,7 +202,6 @@
   "vim.flash.marker.backgroundColor": "#00ffdd",
   "vim.flash.marker.nextMatchBackgroundColor": "#009278",
   "vim.useSystemClipboard": true,
-  "vim.timeout": 350,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
   "vim.camelCaseMotion.enable": true,
@@ -289,6 +288,10 @@
     {
       "before": ["z", "z"],
       "after": ["z"]
+    },
+    {
+      "before": ["/"],
+      "after": ["\"", "s", "y", "/", "<C-R>", "s", "<CR>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
