@@ -171,7 +171,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "redhat.telemetry.enabled": false,
-  "codeium.enableCodeLens": false,
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "phase",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -200,6 +199,8 @@
   "vim.flash.enable": true,
   "vim.flash.labels": "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
   "vim.flash.ignorecase": true,
+  "vim.flash.marker.backgroundColor": "#00ffdd",
+  "vim.flash.marker.nextMatchBackgroundColor": "#009278",
   "vim.useSystemClipboard": true,
   "vim.timeout": 350,
   "vim.highlightedyank.enable": true,
@@ -207,10 +208,192 @@
   "vim.camelCaseMotion.enable": true,
   "vim.easymotionKeys": "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
   "vim.easymotion": true,
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  //move this to default profile
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["i", "i"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["h", "h"],
+      "after": ["left", "<C-o>"]
+    },
+    {
+      "before": ["i", "Enter"],
+      "after": ["<Esc>", "o"]
+    },
+    {
+      "before": ["I", "Enter"],
+      "after": ["<Esc>", "O"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["i", "i"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["a", "f"],
+      "commands": ["editor.action.smartSelect.expand"]
+    },
+    {
+      "before": ["a", "b"],
+      "commands": ["editor.action.smartSelect.shrink"]
+    },
+    {
+      "before": ["a", "o"],
+      "commands": ["editor.emmet.action.balanceOut"]
+    },
+    {
+      "before": ["a", "i"],
+      "commands": ["editor.emmet.action.balanceIn"]
+    },
+    {
+      "before": ["p"],
+      "after": ["P"]
+    },
+    {
+      "before": ["t"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["F"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["T"],
+      "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["Z"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+    {
+      "before": ["z", "z"],
+      "after": ["z"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "H"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["U"],
+      "after": ["<C-r>"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["g", "p"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "y"],
+      "commands": [":reg"]
+    },
+    {
+      "before": ["g", "j"],
+      "commands": [":ju"]
+    },
+    {
+      "before": ["g", "x"],
+      "commands": [":marks"]
+    },
+    {
+      "before": ["Enter"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["g", "Enter"],
+      "after": ["O", "<Esc>"]
+    },
+    {
+      "before": ["z", "n"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["z", "m"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["t"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["F"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["T"],
+      "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["Z"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+    {
+      "before": ["z", "z"],
+      "after": ["z"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ],
   //end-cvim
   "editor.minimap.renderCharacters": false,
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1,
     "vscodevim.vim": 1
   },
   "workbench.editor.showTabs": "single",

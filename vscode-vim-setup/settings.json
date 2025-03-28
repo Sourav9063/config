@@ -228,7 +228,7 @@
       "after": ["<Esc>"]
     },
     {
-      "before": ["j", "j"],
+      "before": ["h", "h"],
       "after": ["left", "<C-o>"]
     },
     {
