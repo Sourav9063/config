@@ -1713,6 +1713,32 @@
     "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
   },
   {
+    "key": "enter",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-insertBestCompletion"
+  },
+  {
+    "key": "tab",
+    "command": "-insertNextSuggestion"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion"
+  },
+  {
+    "key": "tab",
+    "command": "focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
     "key": "alt+m f",
     "command": "workbench.view.search",
     "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"

@@ -453,7 +453,7 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "github.copilot.editor.enableAutoCompletions": false,
-  "editor.minimap.enabled": false,
-  "editor.wordBasedSuggestions": "allDocuments"
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
