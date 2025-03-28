@@ -197,18 +197,19 @@
   "terminal.integrated.env.windows": {},
   //start-cvim
   "vim.flash.enable": true,
-  "vim.flash.labels": "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
+  // "vim.flash.labels": "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
+  "vim.flash.labels": "hjkl;yuiasdgopnmqwertzxcvb,'f",
   "vim.flash.ignorecase": true,
-  "vim.flash.marker.backgroundColor": "#00ffdd",
-  "vim.flash.marker.nextMatchBackgroundColor": "#009278",
+  "vim.flash.marker.backgroundColor": "#ffffff",
+  // "vim.flash.marker.nextMatchBackgroundColor": "#009278",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
   "vim.camelCaseMotion.enable": true,
-  "vim.easymotionKeys": "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
+  "vim.easymotionKeys": "hjkl;yuiasdgopnmqwertzxcvb,'f",
   "vim.easymotion": true,
-  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
-  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  // "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  // "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
   //move this to default profile
   "vim.insertModeKeyBindings": [
     {
