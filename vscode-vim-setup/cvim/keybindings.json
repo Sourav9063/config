@@ -808,6 +808,10 @@
     "command": "workbench.action.quickOpen"
   },
   {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
     "key": "alt+o alt+o",
     "command": "workbench.action.quickOpen"
   },
