@@ -1244,6 +1244,16 @@
     "command": "acceptSelectedSuggestion",
     "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion && vim.active && vim.mode == 'Insert'"
+  },
   //inline
   {
     "key": "alt+i alt+i",
