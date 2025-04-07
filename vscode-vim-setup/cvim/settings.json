@@ -208,6 +208,8 @@
   "vim.camelCaseMotion.enable": true,
   "vim.easymotionKeys": "hjkl;yuiasdgopnmqwertzxcvb,'f",
   "vim.easymotion": true,
+  "vim.showMarksInGutter": true,
+  "vim.targets.enable": true,
   // "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
   // "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
   //move this to default profile
@@ -237,6 +239,10 @@
     {
       "before": ["g", "q"],
       "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
       "before": ["L"],
@@ -293,6 +299,11 @@
     {
       "before": ["/"],
       "after": ["\"", "s", "y", "/", "<C-R>", "s", "<CR>"]
+    },
+
+    {
+      "before": ["?"],
+      "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -306,7 +317,7 @@
     },
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
       "before": ["g", "f"],
@@ -454,14 +465,6 @@
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
-  "editor.minimap.enabled": false,
-  "roo-cline.allowedCommands": [
-    "npm test",
-    "npm install",
-    "tsc",
-    "git log",
-    "git diff",
-    "git show"
-  ]
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
