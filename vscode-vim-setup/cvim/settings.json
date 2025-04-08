@@ -461,10 +461,10 @@
     "arguments": "on",
     "unknown": "off"
   },
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
