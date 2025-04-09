@@ -68,7 +68,6 @@
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "git.suggestSmartCommit": false,
   "python.languageServer": "Pylance",
   "[json]": {
     "editor.quickSuggestions": {
@@ -297,12 +296,11 @@
       "after": ["z"]
     },
     {
-      "before": ["/"],
+      "before": ["g", "/"],
       "after": ["\"", "s", "y", "/", "<C-R>", "s", "<CR>"]
     },
-
     {
-      "before": ["?"],
+      "before": ["g", "?"],
       "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     }
   ],
@@ -465,6 +463,7 @@
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
   "editor.minimap.enabled": false,
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "chat.commandCenter.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
