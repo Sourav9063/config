@@ -1885,7 +1885,7 @@
     "command": "roo-cline.fixCode"
   },
   {
-    "key": "alt+m alt+r",
+    "key": "alt+f v",
     "command": "roo-cline.focusInput"
   },
   {
