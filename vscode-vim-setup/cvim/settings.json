@@ -306,6 +306,22 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["U"],
+      "commands": ["redo"]
+    },
+    // {
+    //   "before": ["U"],
+    //   "after": ["<C-r>"]
+    // },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
       "before": ["g", "q"],
       "commands": ["editor.action.quickFix"]
     },
@@ -324,10 +340,6 @@
     {
       "before": ["L"],
       "after": ["$"]
-    },
-    {
-      "before": ["U"],
-      "after": ["<C-r>"]
     },
     {
       "before": ["H"],
