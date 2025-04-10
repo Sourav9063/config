@@ -427,7 +427,7 @@
   "editor.cursorSurroundingLines": 4,
   "editor.wordSeparators": "-_`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "diffEditor.renderSideBySide": true,
-  "go.toolsManagement.autUpdate": true,
+  "go.toolsManagement.autoUpdate": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 15,
   "editor.accessibilitySupport": "off",
@@ -442,7 +442,7 @@
   "editor.pasteAs.preferences": ["text.updateImports"],
   "git.blame.statusBarItem.enabled": true,
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
-  "editor.lindEditing": true,
+  "editor.linkedEditing": true,
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -476,6 +476,7 @@
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
   "editor.minimap.enabled": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

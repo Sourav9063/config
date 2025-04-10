@@ -201,16 +201,17 @@
   "vim.flash.ignorecase": true,
   "vim.flash.marker.backgroundColor": "#ffffff",
   // "vim.flash.marker.nextMatchBackgroundColor": "#009278",
+  //vim
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
   "vim.camelCaseMotion.enable": true,
-  "vim.easymotionKeys": "hjkl;yuiasdgopnmqwertzxcvb,'f",
+  "vim.easymotionKeys": "hjkl;yuigop,'nmqwertzxcvbasdf",
   "vim.easymotion": true,
   "vim.showMarksInGutter": true,
   "vim.targets.enable": true,
-  // "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
-  // "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
   //move this to default profile
   "vim.insertModeKeyBindings": [
     {
@@ -380,6 +381,14 @@
     {
       "before": ["z", "m"],
       "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.openNextRecentlyUsedEdior"]
     },
     {
       "before": ["t"],
