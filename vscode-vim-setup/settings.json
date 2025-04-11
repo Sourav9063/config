@@ -212,6 +212,11 @@
   "vim.targets.enable": true,
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  "flash-vscode.caseSensitive": false,
+  "flash-vscode.labelBackgroundColor": "#ff0000",
+  "flash-vscode.labelColor": "#ffffff",
+  "flash-vscode.labelFontWeight": "bold",
+  "flash-vscode.dimColor": "rgba(128, 128, 128, 1)",
   //move this to default profile
   "vim.insertModeKeyBindings": [
     {
@@ -241,8 +246,32 @@
       "commands": ["editor.action.quickFix"]
     },
     {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "H"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
       "before": ["g", "r"],
       "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
     },
     {
       "before": ["L"],
@@ -273,12 +302,12 @@
       "after": ["P"]
     },
     {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
+      "before": ["F"],
+      "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
       "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["z"],
@@ -299,6 +328,14 @@
     {
       "before": ["g", "?"],
       "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
+    },
+    {
+      "before": ["f"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -335,20 +372,20 @@
       "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
       "before": ["g", "p"],
       "commands": ["editor.action.peekDefinition"]
     },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
     },
     {
       "before": ["g", "y"],
@@ -387,12 +424,12 @@
       "commands": ["workbench.action.openNextRecentlyUsedEdior"]
     },
     {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
+      "before": ["F"],
+      "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
       "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["z"],
@@ -405,6 +442,14 @@
     {
       "before": ["z", "z"],
       "after": ["z"]
+    },
+    {
+      "before": ["f"],
+      "commands": ["flash-vscode.start"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
@@ -415,6 +460,14 @@
     {
       "before": ["H"],
       "after": ["^"]
+    },
+    {
+      "before": ["f"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     }
   ],
   //end-cvim
@@ -475,8 +528,8 @@
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
-  "editor.minimap.enabled": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
