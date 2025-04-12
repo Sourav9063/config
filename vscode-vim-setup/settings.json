@@ -206,7 +206,8 @@
   "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
   "vim.camelCaseMotion.enable": true,
-  "vim.easymotionKeys": "hjkl;yuigop,'nmqwertzxcvbasdf",
+  // "vim.easymotionKeys": "hjkl;yuigop,'nmqwertzxcvbasdf",
+  "vim.easymotionKeys": "hklyuio;[]/.'pnm,qwertzxcvbasdgjf",
   "vim.easymotion": true,
   "vim.showMarksInGutter": true,
   "vim.targets.enable": true,
@@ -306,7 +307,7 @@
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
-      "before": ["F"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
@@ -330,7 +331,7 @@
       "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     },
     {
-      "before": ["f"],
+      "before": ["t"],
       "commands": ["flash-vscode.startSelection"]
     },
     {
@@ -428,7 +429,7 @@
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
-      "before": ["F"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
@@ -444,7 +445,7 @@
       "after": ["z"]
     },
     {
-      "before": ["f"],
+      "before": ["t"],
       "commands": ["flash-vscode.start"]
     },
     {
@@ -463,6 +464,10 @@
     },
     {
       "before": ["f"],
+      "after": ["Escape", "v", "<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["t"],
       "commands": ["flash-vscode.startSelection"]
     },
     {
