@@ -90,7 +90,7 @@ _Includes bindings from `vim.visualModeKeyBindingsNonRecursive`_
 | `u`/`U` | Lowercase/Uppercase selection |
 | `~` | Toggle case of selection |
 | `gb` | Add next occurrence to selection |
-| `af`/`ab` | Expand/Shrink selection (smartSelect) |
+| `al`/`ah` | Expand/Shrink selection (smartSelect) |
 | `alt+a alt+l` | Expand selection (smartSelect) |
 | `alt+a alt+h` | Shrink selection (smartSelect) |
 | `alt+a shift+b` | Select to matching bracket (`editor.action.selectToBracket`) |
