@@ -1253,6 +1253,11 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
+    "key": "shift+enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
     "key": "alt+tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionVisible && !editorReadonly"

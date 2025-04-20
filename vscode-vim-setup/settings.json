@@ -170,7 +170,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "redhat.telemetry.enabled": false,
-  "editor.formatOnSave": true,
   "editor.cursorBlinking": "phase",
   "diffEditor.ignoreTrimWhitespace": false,
   "turboConsoleLog.insertEnclosingClass": false,
@@ -543,6 +542,8 @@
     "git log",
     "git diff",
     "git show"
-  ]
+  ],
+  "git.suggestSmartCommit": false,
+  "editor.formatOnSave": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
