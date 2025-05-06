@@ -206,7 +206,7 @@
   "vim.leader": "<Space>",
   "vim.camelCaseMotion.enable": true,
   // "vim.easymotionKeys": "hjkl;yuigop,'nmqwertzxcvbasdf",
-  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+  "vim.easymotionKeys": "hklyuio;[]/.'pnm,qwertzxcvbasdgjf",
   "vim.easymotion": true,
   "vim.showMarksInGutter": true,
   "vim.targets.enable": true,
@@ -534,6 +534,7 @@
   "editor.wordBasedSuggestions": "allDocuments",
   "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
+  "editor.minimap.enabled": false,
   "roo-cline.allowedCommands": [
     "npm test",
     "npm install",
@@ -543,10 +544,6 @@
     "git show"
   ],
   "git.suggestSmartCommit": false,
-  "editor.minimap.enabled": false,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "editor.formatOnSave": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
