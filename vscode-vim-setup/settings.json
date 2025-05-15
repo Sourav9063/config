@@ -212,11 +212,6 @@
   "vim.targets.enable": true,
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
-  "flash-vscode.caseSensitive": false,
-  "flash-vscode.labelBackgroundColor": "#ff0000",
-  "flash-vscode.labelColor": "#ffffff",
-  "flash-vscode.labelFontWeight": "bold",
-  "flash-vscode.dimColor": "rgba(128, 128, 128, 1)",
   //move this to default profile
   "vim.insertModeKeyBindings": [
     {
@@ -535,7 +530,6 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
   "roo-cline.allowedCommands": [
-    "npm test",
     "npm install",
     "tsc",
     "git log",
@@ -543,10 +537,10 @@
     "git show"
   ],
   "git.suggestSmartCommit": false,
-  "editor.minimap.enabled": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
