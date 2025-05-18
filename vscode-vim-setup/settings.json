@@ -301,7 +301,7 @@
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
-      "before": ["f"],
+      "before": ["t"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
@@ -325,7 +325,7 @@
       "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     },
     {
-      "before": ["t"],
+      "before": ["f"],
       "commands": ["flash-vscode.startSelection"]
     },
     {
@@ -420,10 +420,10 @@
     },
     {
       "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
+      "commands": ["flash-vscode.startSelection"]
     },
     {
-      "before": ["f"],
+      "before": ["t"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
@@ -439,7 +439,7 @@
       "after": ["z"]
     },
     {
-      "before": ["t"],
+      "before": ["f"],
       "commands": ["flash-vscode.start"]
     },
     {
@@ -458,11 +458,11 @@
     },
     {
       "before": ["f"],
-      "after": ["Escape", "v", "<leader>", "<leader>", "s"]
+      "commands": ["flash-vscode.startSelection"]
     },
     {
-      "before": ["t"],
-      "commands": ["flash-vscode.startSelection"]
+      "before": ["f"],
+      "after": ["Escape", "Escape", "v", "f"]
     },
     {
       "before": ["<BS>"],
@@ -541,6 +541,9 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.formatOnSave": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
