@@ -153,7 +153,7 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
@@ -325,12 +325,16 @@
       "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     },
     {
-      "before": ["f"],
-      "commands": ["flash-vscode.startSelection"]
-    },
-    {
       "before": ["<BS>"],
       "commands": ["flash-vscode.backspace"]
+    },
+    {
+      "before": ["f"],
+      "commands": ["flash-vscode.start"]
+    },
+    {
+      "before": ["F"],
+      "commands": ["flash-vscode.startSelection"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -416,7 +420,7 @@
     },
     {
       "before": ["<leader>", "k"],
-      "commands": ["workbench.action.openNextRecentlyUsedEdior"]
+      "commands": ["workbench.action.openNextRecentlyUsedEditor"]
     },
     {
       "before": ["F"],
@@ -458,11 +462,11 @@
     },
     {
       "before": ["f"],
-      "commands": ["flash-vscode.startSelection"]
+      "commands": ["flash-vscode.start"]
     },
     {
-      "before": ["f"],
-      "after": ["Escape", "Escape", "v", "f"]
+      "before": ["F"],
+      "commands": ["flash-vscode.startSelection"]
     },
     {
       "before": ["<BS>"],
@@ -540,10 +544,10 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "editor.formatOnSave": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

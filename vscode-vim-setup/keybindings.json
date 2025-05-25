@@ -1116,22 +1116,22 @@
     "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "alt+i f",
+    "key": "alt+i s",
     "command": "hideSuggestWidget",
     "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "alt+i f",
+    "key": "alt+i s",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
-    "key": "alt+i alt+f",
+    "key": "alt+i alt+s",
     "command": "hideSuggestWidget",
     "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "alt+i alt+f",
+    "key": "alt+i alt+s",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
@@ -2194,5 +2194,15 @@
   {
     "key": "alt+o shift+r",
     "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "alt+j",
+    "command": "flash-vscode.jump.lineDown",
+    "when": "flash-vscode-mode != 'idle' && ( editorIsOpen || editorFocus )"
+  },
+  {
+    "key": "alt+k",
+    "command": "flash-vscode.jump.lineUp",
+    "when": "flash-vscode-mode != 'idle' && ( editorIsOpen || editorFocus )"
   }
 ]
