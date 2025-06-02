@@ -2204,5 +2204,15 @@
     "key": "alt+k",
     "command": "flash-vscode.jump.lineUp",
     "when": "flash-vscode-mode != 'idle' && ( editorIsOpen || editorFocus )"
+  },
+  {
+    "key": "alt+i alt+i",
+    "command": "cloudcode.duetAI.generateCode",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && !inGeminiDiffView && !isInDiffEditor"
+  },
+  {
+    "key": "alt+i i",
+    "command": "cloudcode.duetAI.showinEditor",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
   }
 ]

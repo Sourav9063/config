@@ -153,7 +153,7 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
@@ -548,6 +548,8 @@
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "typescript.preferGoToSourceDefinition": true,
+  "javascript.preferGoToSourceDefinition": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
