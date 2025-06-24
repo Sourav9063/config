@@ -2205,14 +2205,84 @@
     "command": "flash-vscode.jump.lineUp",
     "when": "flash-vscode-mode != 'idle' && ( editorIsOpen || editorFocus )"
   },
+  // Gemini chat
   {
-    "key": "alt+i alt+i",
-    "command": "cloudcode.duetAI.generateCode",
+    "key": "alt+g f",
+    "command": "workbench.view.extension.geminiChat",
+    "when": "viewContainer.workbench.view.extension.geminiChat.enabled && !runningOnCloudShell"
+  },
+  {
+    "key": "alt+g",
+    "command": "-workbench.view.extension.geminiChat",
+    "when": "viewContainer.workbench.view.extension.geminiChat.enabled && !runningOnCloudShell"
+  },
+  {
+    "key": "alt+g g",
+    "command": "geminicodeassist.showinEditor",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-geminicodeassist.showinEditor",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
+  },
+  {
+    "key": "alt+g a",
+    "command": "geminicodeassist.codelens.accept",
+    "when": "authLoggedIn && cloudcode.duetAI.documentMatch && config.geminicodeassist.enable && inGeminiDiffView && isInDiffEditor"
+  },
+  {
+    "key": "alt+a",
+    "command": "-geminicodeassist.codelens.accept",
+    "when": "authLoggedIn && cloudcode.duetAI.documentMatch && config.geminicodeassist.enable && inGeminiDiffView && isInDiffEditor"
+  },
+  {
+    "key": "alt+g d",
+    "command": "geminicodeassist.codelens.reject",
+    "when": "authLoggedIn && cloudcode.duetAI.documentMatch && config.geminicodeassist.enable && inGeminiDiffView && isInDiffEditor"
+  },
+  {
+    "key": "alt+d",
+    "command": "-geminicodeassist.codelens.reject",
+    "when": "authLoggedIn && cloudcode.duetAI.documentMatch && config.geminicodeassist.enable && inGeminiDiffView && isInDiffEditor"
+  },
+  {
+    "key": "alt+g shift+a",
+    "command": "geminicodeassist.addFileToContext"
+  },
+  {
+    "key": "alt+g shift+alt+a",
+    "command": "geminicodeassist.addFilesToContext"
+  },
+  {
+    "key": "alt+g v",
+    "command": "geminicodeassist.addSnippetToContext"
+  },
+  {
+    "key": "alt+g alt+n",
+    "command": "geminicodeassist.chat.new"
+  },
+  {
+    "key": "alt+g alt+r",
+    "command": "geminicodeassist.chat.resume"
+  },
+  {
+    "key": "alt+g c",
+    "command": "workbench.action.quickOpen",
+    "args": ">gemini "
+  },
+  {
+    "key": "alt+g alt+i",
+    "command": "geminicodeassist.generateCode",
     "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && !inGeminiDiffView && !isInDiffEditor"
   },
   {
-    "key": "alt+i i",
-    "command": "cloudcode.duetAI.showinEditor",
-    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && shouldRegisterInEditorCommand && !inGeminiDiffView && !isInDiffEditor"
+    "key": "alt+g alt+g",
+    "command": "geminicodeassist.generateCode",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && !inGeminiDiffView && !isInDiffEditor"
+  },
+  {
+    "key": "alt+g alt+a",
+    "command": "geminicodeassist.addSnippetToContext"
   }
 ]

@@ -531,7 +531,6 @@
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
   "roo-cline.allowedCommands": [
     "npm install",
@@ -544,12 +543,20 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "editor.minimap.enabled": false,
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "editor.formatOnSave": true,
   "typescript.preferGoToSourceDefinition": true,
-  "javascript.preferGoToSourceDefinition": true
+  "javascript.preferGoToSourceDefinition": true,
+  "geminicodeassist.customCommands": {
+    "rewrite": "rewrite this using best practices and design pattern"
+  },
+  "diffEditor.codeLens": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.minimap.enabled": false,
+  "supermaven.enable": {
+    "*": false
+  },
+  "geminicodeassist.inlineSuggestions.enableAuto": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
