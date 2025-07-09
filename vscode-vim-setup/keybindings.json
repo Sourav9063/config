@@ -276,7 +276,17 @@
     "when": "editorTextFocus && !textCompareEditorActive"
   },
   {
+    "key": "alt+s alt+j",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
     "key": "alt+s k",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+s alt+k",
     "command": "workbench.action.editor.previousChange",
     "when": "editorTextFocus && !textCompareEditorActive"
   },
