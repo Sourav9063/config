@@ -840,11 +840,6 @@
     "command": "workbench.action.quickOpenWithModes"
   },
   {
-    "key": "alt+o alt+r",
-    "command": "workbench.action.quickOpenRecent"
-  },
-  //focus
-  {
     "key": "alt+f e",
     "command": "workbench.action.focusFirstEditorGroup"
   },
@@ -2284,5 +2279,13 @@
   {
     "key": "alt+g alt+a",
     "command": "geminicodeassist.addSnippetToContext"
+  },
+  {
+    "key": "alt+o alt+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "alt+;",
+    "command": "workbench.action.focusActiveEditorGroup"
   }
 ]

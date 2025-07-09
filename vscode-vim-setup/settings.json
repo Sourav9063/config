@@ -158,7 +158,9 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "/home/sourav/.vscode/extensions/continue.continue-1.0.15-linux-x64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ]
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -335,6 +337,74 @@
     {
       "before": ["F"],
       "commands": ["flash-vscode.startSelection"]
+    },
+    //leader
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.view.search"]
+    },
+    {
+      "before": ["<leader>", "f", "o"],
+      "commands": ["workbench.action.quickTextSearch"]
+    },
+    {
+      "before": ["<leader>", "f", "O"],
+      "commands": ["search.action.openNewEditor"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal",
+        "workbench.action.terminal.focusTabs"
+      ]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "s", "o"],
+      "commands": ["outline.focus"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.openNextRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "J"],
+      "commands": ["workbench.action.openPreviousEditorFromHistory"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["editor.action.quickFix"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -449,6 +519,74 @@
     {
       "before": ["<BS>"],
       "commands": ["flash-vscode.backspace"]
+    },
+    //leader
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f", "e"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.view.search"]
+    },
+    {
+      "before": ["<leader>", "f", "o"],
+      "commands": ["workbench.action.quickTextSearch"]
+    },
+    {
+      "before": ["<leader>", "f", "O"],
+      "commands": ["search.action.openNewEditor"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal",
+        "workbench.action.terminal.focusTabs"
+      ]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "s", "o"],
+      "commands": ["outline.focus"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.openNextRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "J"],
+      "commands": ["workbench.action.openPreviousEditorFromHistory"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["editor.action.quickFix"]
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
@@ -553,10 +691,13 @@
   },
   "diffEditor.codeLens": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "editor.minimap.enabled": false,
   "supermaven.enable": {
     "*": false
   },
-  "geminicodeassist.inlineSuggestions.enableAuto": true
+  "geminicodeassist.inlineSuggestions.enableAuto": true,
+  "geminicodeassist.enableTelemetry": false,
+  "geminicodeassist.updateChannel": "Insiders",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
