@@ -673,6 +673,14 @@
       "before": ["z", "z"],
       "after": ["z"]
     },
+    {
+      "before": ["J"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["workbench.action.openNextRecentlyUsedEditor"]
+    },
     //leader
     {
       "before": ["<leader>", "e"],
