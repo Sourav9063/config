@@ -328,6 +328,10 @@
     },
     //leader
     {
+      "before": ["<leader>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
+    },
+    {
       "before": ["<leader>", "e"],
       "commands": ["workbench.view.explorer"]
     },
@@ -683,6 +687,10 @@
     },
     //leader
     {
+      "before": ["<leader>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
+    },
+    {
       "before": ["<leader>", "e"],
       "commands": ["workbench.view.explorer"]
     },
@@ -951,6 +959,10 @@
     {
       "before": ["<BS>"],
       "commands": ["flash-vscode.backspace"]
+    },
+    {
+      "before": ["<leader>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
     }
   ],
   //end-cvim
