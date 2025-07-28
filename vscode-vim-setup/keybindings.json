@@ -11,16 +11,16 @@
     "command": "-cursorPageUp",
     "when": "textInputFocus"
   },
-  {
-    "key": "alt+k",
-    "command": "cursorUp",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "alt+j",
-    "command": "cursorDown",
-    "when": "textInputFocus"
-  },
+  // {
+  //   "key": "alt+k",
+  //   "command": "cursorUp",
+  //   "when": "textInputFocus"
+  // },
+  // {
+  //   "key": "alt+j",
+  //   "command": "cursorDown",
+  //   "when": "textInputFocus"
+  // },
   {
     "key": "alt+h",
     "command": "cursorLeft",
@@ -739,16 +739,16 @@
   //   "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
   //   "when": "inFilesPicker && inQuickOpen"
   // },
-  {
-    "key": "alt+j",
-    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
-  },
-  {
-    "key": "alt+k",
-    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
-  },
+  // {
+  //   "key": "alt+j",
+  //   "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+  //   "when": "inFilesPicker && inQuickOpen"
+  // },
+  // {
+  //   "key": "alt+k",
+  //   "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+  //   "when": "inFilesPicker && inQuickOpen"
+  // },
   {
     "key": "alt+o o",
     "command": "workbench.action.quickOpen"
@@ -1070,16 +1070,16 @@
     "key": "alt+v v",
     "command": "toggleVim"
   },
-  {
-    "command": "editor.action.moveLinesUpAction",
-    "key": "alt+k",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-  },
-  {
-    "command": "editor.action.moveLinesDownAction",
-    "key": "alt+j",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-  },
+  // {
+  //   "command": "editor.action.moveLinesUpAction",
+  //   "key": "alt+k",
+  //   "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  // },
+  // {
+  //   "command": "editor.action.moveLinesDownAction",
+  //   "key": "alt+j",
+  //   "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  // },
   {
     "key": "g r",
     "command": "closeReferenceSearch",
@@ -1155,16 +1155,16 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
-  {
-    "key": "alt+j",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "alt+k",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
+  // {
+  //   "key": "alt+j",
+  //   "command": "selectNextSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
+  // {
+  //   "key": "alt+k",
+  //   "command": "selectPrevSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
   {
     "key": "alt+i d",
     "command": "toggleSuggestionDetails",
@@ -1397,27 +1397,32 @@
     "key": "alt+f f",
     "command": "workbench.action.findInFiles"
   },
+  // {
+  //   "key": "alt+k",
+  //   "command": "search.focus.previousInputBox",
+  //   "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+  // },
+  // {
+  //   "key": "alt+j",
+  //   "command": "search.focus.nextInputBox",
+  //   "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+  // },
   {
-    "key": "alt+k",
-    "command": "search.focus.previousInputBox",
-    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
-  },
-  {
-    "key": "alt+j",
+    "key": "ctrl+n",
     "command": "search.focus.nextInputBox",
     "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
   },
   //code action
-  {
-    "key": "alt+j",
-    "command": "selectNextCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
-    "key": "alt+k",
-    "command": "selectPrevCodeAction",
-    "when": "codeActionMenuVisible"
-  },
+  // {
+  //   "key": "alt+j",
+  //   "command": "selectNextCodeAction",
+  //   "when": "codeActionMenuVisible"
+  // },
+  // {
+  //   "key": "alt+k",
+  //   "command": "selectPrevCodeAction",
+  //   "when": "codeActionMenuVisible"
+  // },
   {
     "key": "alt+l",
     "command": "acceptSelectedCodeAction",
@@ -1764,6 +1769,10 @@
     "args": ">codeium "
   },
   //roo-cline
+  {
+    "key": "alt+v t",
+    "command": "roo-cline.openInNewTab"
+  },
   {
     "key": "alt+m r",
     "command": "workbench.view.extension.roo-cline-ActivityBar"
@@ -2200,16 +2209,16 @@
     "key": "alt+o shift+r",
     "command": "workbench.action.reloadWindow"
   },
-  {
-    "key": "alt+j",
-    "command": "flash-vscode.jump.lineDown",
-    "when": "flash-vscode-mode != 'idle' && ( editorIsOpen || editorFocus )"
-  },
-  {
-    "key": "alt+k",
-    "command": "flash-vscode.jump.lineUp",
-    "when": "flash-vscode-mode != 'idle' && ( editorIsOpen || editorFocus )"
-  },
+  // {
+  //   "key": "alt+j",
+  //   "command": "flash-vscode.jump.lineDown",
+  //   "when": "flash-vscode-mode != 'idle' && editorTextFocus && !textInputFocus"
+  // },
+  // {
+  //   "key": "alt+k",
+  //   "command": "flash-vscode.jump.lineUp",
+  //   "when": "flash-vscode-mode != 'idle' && editorTextFocus && !textInputFocus"
+  // },
   // Gemini chat
   {
     "key": "alt+g f",
@@ -2297,5 +2306,100 @@
   {
     "key": "alt+;",
     "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "alt+k",
+    "command": "showPrevParameterHint",
+    "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "alt+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "alt+k",
+    "command": "focusPreviousRenameSuggestion",
+    "when": "renameInputVisible"
+  },
+  {
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "key": "alt+k",
+    "when": "inQuickOpen"
+  },
+  {
+    "command": "workbench.action.quickOpenSelectNext",
+    "key": "alt+j",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "alt+j",
+    "command": "showNextParameterHint",
+    "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "alt+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "alt+j",
+    "command": "search.focus.nextInputBox",
+    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && vim.active && !suggestWidgetHasFocusedSuggestion && vim.mode == 'Insert'"
+  },
+  {
+    "key": "alt+j",
+    "command": "focusNextRenameSuggestion",
+    "when": "renameInputVisible"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && vim.active && !editorReadonly && !suggestWidgetVisible && vim.mode == 'Insert'"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && vim.active && !editorReadonly && !suggestWidgetVisible && vim.mode == 'Insert'"
+  },
+  {
+    "key": "alt+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "list.focusUp",
+    "when": "inReferenceSearchEditor && vim.mode != 'Normal'"
+  },
+  {
+    "key": "alt+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "list.focusDown",
+    "when": "inReferenceSearchEditor && vim.mode != 'Normal'"
   }
 ]
