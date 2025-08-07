@@ -81,10 +81,6 @@
   //file utils
   {
     "key": "alt+n n",
-    "command": "fileutils.newFile"
-  },
-  {
-    "key": "alt+n n",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
   },
@@ -92,18 +88,6 @@
     "key": "alt+n shift+n",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
-  },
-  {
-    "key": "alt+n alt+n",
-    "command": "fileutils.newFileAtRoot"
-  },
-  {
-    "key": "alt+n alt+d",
-    "command": "fileutils.duplicateFile"
-  },
-  {
-    "key": "alt+n alt+m",
-    "command": "fileutils.moveFile"
   },
   {
     "key": "alt+n shift+r",
@@ -461,8 +445,14 @@
     "when": "activeEditorIsPinned"
   },
   {
-    "key": "alt+g 1",
-    "command": "workbench.action.focusFirstEditorGroup"
+    "key": "alt+f e",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "alt+f e",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "editorTextFocus"
   },
   {
     "key": "alt+g 2",
@@ -792,6 +782,11 @@
     "command": "workbench.action.quickTextSearch"
   },
   {
+    "key": ",",
+    "command": "workbench.action.quickTextSearch",
+    "when": "inQuickOpen"
+  },
+  {
     "key": "alt+o alt+f",
     "command": "search.action.openNewEditor"
   },
@@ -848,10 +843,6 @@
   {
     "key": "alt+o m",
     "command": "workbench.action.quickOpenWithModes"
-  },
-  {
-    "key": "alt+f e",
-    "command": "workbench.action.focusFirstEditorGroup"
   },
   {
     "key": "alt+f r",

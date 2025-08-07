@@ -153,7 +153,7 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
@@ -992,7 +992,7 @@
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
   "editor.linkedEditing": true,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -1061,6 +1061,7 @@
     "git show"
   ],
   "kilo-code.deniedCommands": [],
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
