@@ -992,7 +992,7 @@
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
   "editor.linkedEditing": true,
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "Vue.volar"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -1024,13 +1024,7 @@
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
   "chat.commandCenter.enabled": false,
-  "roo-cline.allowedCommands": [
-    "npm install",
-    "tsc",
-    "git log",
-    "git diff",
-    "git show"
-  ],
+  "roo-cline.allowedCommands": ["tsc", "git log", "git diff", "git show"],
   "git.suggestSmartCommit": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -1061,7 +1055,6 @@
     "git show"
   ],
   "kilo-code.deniedCommands": [],
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
