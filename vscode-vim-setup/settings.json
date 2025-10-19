@@ -143,7 +143,6 @@
   "window.titleBarStyle": "custom",
   "git.mergeEditor": true,
   "code-runner.runInTerminal": true,
-  "workbench.sideBar.location": "right",
   "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairsHorizontal": true,
@@ -977,7 +976,7 @@
   "diffEditor.renderSideBySide": true,
   "go.toolsManagement.autoUpdate": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 15,
+  "workbench.editor.limit.value": 50,
   "editor.accessibilitySupport": "off",
   "terminal.integrated.stickyScroll.enabled": true,
   "editor.smoothScrolling": true,
@@ -992,7 +991,7 @@
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
   "editor.linkedEditing": true,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -1024,7 +1023,13 @@
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.wordBasedSuggestions": "allDocuments",
   "chat.commandCenter.enabled": false,
-  "roo-cline.allowedCommands": ["tsc", "git log", "git diff", "git show"],
+  "roo-cline.allowedCommands": [
+    "git log",
+    "git diff",
+    "git show",
+    "npm install",
+    "tsc"
+  ],
   "git.suggestSmartCommit": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -1040,7 +1045,7 @@
   "diffEditor.codeLens": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "supermaven.enable": {
-    "*": false
+    "*": true
   },
   "geminicodeassist.inlineSuggestions.enableAuto": true,
   "geminicodeassist.enableTelemetry": false,
@@ -1055,6 +1060,18 @@
     "git show"
   ],
   "kilo-code.deniedCommands": [],
-  "editor.minimap.enabled": false
+  "geminicodeassist.inlineSuggestions.suggestionSpeed": "Slow",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

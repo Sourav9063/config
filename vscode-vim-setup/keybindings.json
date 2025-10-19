@@ -1335,11 +1335,6 @@
     "command": "workbench.action.findInFiles"
   },
   {
-    "key": "alt+f c",
-    "command": "copyRelativeFilePath",
-    "when": "editorFocus"
-  },
-  {
     "key": "alt+m shift+o",
     "command": "workbench.panel.output.focus"
   },
@@ -2392,5 +2387,37 @@
     "key": "alt+j",
     "command": "list.focusDown",
     "when": "inReferenceSearchEditor && vim.mode != 'Normal'"
+  },
+  {
+    "key": "alt+g alt+s",
+    "command": "geminicodeassist.nextEdit.acceptSuggestion",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && nextEditSessionActive"
+  },
+  {
+    "key": "tab",
+    "command": "-geminicodeassist.nextEdit.acceptSuggestion",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && nextEditSessionActive"
+  },
+  {
+    "key": "alt+g alt+s",
+    "command": "geminicodeassist.nextEdit.startSession",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && nextEditSessionAvailable"
+  },
+  {
+    "key": "tab",
+    "command": "-geminicodeassist.nextEdit.startSession",
+    "when": "authLoggedIn && config.geminicodeassist.enable && editorTextFocus && nextEditSessionAvailable"
+  },
+  {
+    "key": "alt+f c",
+    "command": "claude-vscode.editor.open"
+  },
+  {
+    "key": "ctrl+escape",
+    "command": "-claude-vscode.editor.open"
+  },
+  {
+    "key": "alt+f alt+c",
+    "command": "claude-vscode.sidebar.open"
   }
 ]
