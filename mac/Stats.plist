@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>299659A2-820C-4AA5-AC8A-FB079DFD87E5_details</key>
+	<true/>
+	<key>Battery_battery_additional</key>
+	<string>innerPercentage</string>
+	<key>Battery_battery_color</key>
+	<false/>
+	<key>Battery_battery_xlSize</key>
+	<true/>
+	<key>Battery_state</key>
+	<true/>
+	<key>CPU_barChart_position</key>
+	<integer>3</integer>
+	<key>CPU_label_position</key>
+	<integer>1</integer>
+	<key>CPU_lineChart_position</key>
+	<integer>2</integer>
+	<key>CPU_mini_alignment</key>
+	<string>left</string>
+	<key>CPU_mini_color</key>
+	<string>system</string>
+	<key>CPU_mini_position</key>
+	<integer>0</integer>
+	<key>CPU_pieChart_position</key>
+	<integer>4</integer>
+	<key>CPU_tachometer_position</key>
+	<integer>5</integer>
+	<key>CPU_widget</key>
+	<string>mini</string>
+	<key>CombinedModules</key>
+	<true/>
+	<key>CombinedModules_popup</key>
+	<false/>
+	<key>CombinedModules_separator</key>
+	<false/>
+	<key>Disk_state</key>
+	<false/>
+	<key>GPU_mini_alignment</key>
+	<string>left</string>
+	<key>GPU_mini_color</key>
+	<string>darkGray</string>
+	<key>GPU_state</key>
+	<true/>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{800, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
+	<key>NSOSPLastRootDirectory</key>
+	<data>
+	Ym9va+wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxAEA
+	AAQAAAADAwAAAAQAAAUAAAABAQAAVXNlcnMAAAAGAAAAAQEAAFNvdXJhdgAACQAAAAEB
+	AABEb2N1bWVudHMAAAAMAAAAAQYAABAAAAAgAAAAMAAAAAgAAAAEAwAALUMAAAAAAAAI
+	AAAABAMAALKyBQAAAAAACAAAAAQDAADrsgUAAAAAAAwAAAABBgAAWAAAAGgAAAB4AAAA
+	CAAAAAAEAABBxxWzIvxdRhgAAAABAgAAAgAAAAAAAAAfAgAAAAAAAB8CAAAAAAAAAAAA
+	AAEFAAAIAAAABAMAAAEAAAAAAAAABAAAAAMDAAD2AQAACAAAAAEJAABmaWxlOi8vLwwA
+	AAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAAIcROQAAAAgAAAAABAAAQcdCkGIAAAAk
+	AAAAAQEAAENFN0JENTk4LTEwQjctNEY1OS1BRDVGLTZDNkZFQUQyRDlDNhgAAAABAgAA
+	gQAAAAEAAADvEwAAAQAAAO8TAAABAAAAAQAAAAEBAAAvAAAAMAAAAAECAABkbmliAAAA
+	AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzY29kAgAAAAAAAADwAAAA/v///wEA
+	AAAAAAAAEwAAAAQQAABEAAAAAAAAAAUQAACIAAAAAAAAABAQAACsAAAAAAAAAEAQAACc
+	AAAAAAAAAAIgAACAAQAAAAAAAAUgAADwAAAAAAAAABAgAAAAAQAAAAAAABEgAAA0AQAA
+	AAAAABIgAAAUAQAAAAAAABMgAAAkAQAAAAAAACAgAABgAQAAAAAAADAgAADMAAAAAAAA
+	AAHAAADUAAAAAAAAABHAAAAgAAAAAAAAABLAAADkAAAAAAAAAAHQAADMAAAAAAAAABDQ
+	AAAEAAAAAAAAABfwAAAwAAAAAAAAACLwAACMAQAAAAAAAA==
+	</data>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>335 285 800 448 0 0 1470 922 </string>
+	<key>Network_speed_icon</key>
+	<string>arrows</string>
+	<key>Network_speed_iconColor</key>
+	<string>default</string>
+	<key>Network_speed_mode</key>
+	<string>twoRows</string>
+	<key>RAM_state</key>
+	<false/>
+	<key>runAtLoginInitialized</key>
+	<true/>
+	<key>setupProcess</key>
+	<true/>
+	<key>telemetry</key>
+	<false/>
+	<key>updater_check_ts</key>
+	<integer>1760954830</integer>
+	<key>version</key>
+	<string>2.11.57</string>
+</dict>
+</plist>
