@@ -315,7 +315,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.jump.symbolSelection"]
+      "commands": ["flash-vscode.jump.treesitterSelection"]
     },
     {
       "before": ["z"],
@@ -658,7 +658,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.jump.symbolSelection"]
+      "commands": ["flash-vscode.jump.treesitterSelection"]
     },
     {
       "before": ["f"],
@@ -953,7 +953,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.jump.symbolSelection"]
+      "commands": ["flash-vscode.jump.treesitterSelection"]
     },
     {
       "before": ["<BS>"],
