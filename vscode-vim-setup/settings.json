@@ -152,7 +152,7 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
@@ -165,7 +165,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -315,7 +315,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.startSelection"]
+      "commands": ["flash-vscode.jump.symbolSelection"]
     },
     {
       "before": ["z"],
@@ -658,7 +658,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.startSelection"]
+      "commands": ["flash-vscode.jump.symbolSelection"]
     },
     {
       "before": ["f"],
@@ -953,7 +953,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.startSelection"]
+      "commands": ["flash-vscode.jump.symbolSelection"]
     },
     {
       "before": ["<BS>"],
@@ -982,7 +982,6 @@
   "editor.smoothScrolling": true,
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "editor.lineNumbers": "relative",
-  "terminal.integrated.fontFamily": "FiraMono Nerd Font",
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
   "editor.suggest.selectionMode": "never",
   "editor.suggest.preview": true,
@@ -1032,10 +1031,10 @@
   ],
   "git.suggestSmartCommit": false,
   "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "typescript.preferGoToSourceDefinition": true,
   "javascript.preferGoToSourceDefinition": true,
@@ -1043,7 +1042,6 @@
     "rewrite": "rewrite this using best practices and design pattern"
   },
   "diffEditor.codeLens": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "supermaven.enable": {
     "*": true
   },
@@ -1071,7 +1069,19 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "workbench.sideBar.location": "right",
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "[yaml]": {
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  "geminicodeassist.project": "rational-catfish-lm6vf",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
