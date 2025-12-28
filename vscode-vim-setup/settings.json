@@ -1081,7 +1081,6 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
