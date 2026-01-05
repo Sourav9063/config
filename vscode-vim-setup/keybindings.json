@@ -257,7 +257,7 @@
   },
   {
     "key": "alt+s alt+j",
-    "command": "workbench.action.editor.nextChange",
+    "command": "editor.action.dirtydiff.next",
     "when": "editorTextFocus && !textCompareEditorActive"
   },
   {
@@ -267,19 +267,19 @@
   },
   {
     "key": "alt+s alt+k",
-    "command": "workbench.action.editor.previousChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "alt+s shift+j",
-    "command": "editor.action.dirtydiff.next",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "alt+s shift+k",
     "command": "editor.action.dirtydiff.previous",
     "when": "editorTextFocus && !textCompareEditorActive"
   },
+  // {
+  //   "key": "alt+s shift+j",
+  //   "command": "editor.action.dirtydiff.next",
+  //   "when": "editorTextFocus && !textCompareEditorActive"
+  // },
+  // {
+  //   "key": "alt+s shift+k",
+  //   "command": "editor.action.dirtydiff.previous",
+  //   "when": "editorTextFocus && !textCompareEditorActive"
+  // },
   {
     "key": "alt+s c",
     "command": "workbench.action.quickOpen",
@@ -2382,7 +2382,13 @@
     "when": "terminalFocus"
   },
   {
-    "key": "alt+space",
-    "command": "whichkey.show"
+    "key": "alt+m n",
+    "command": "workbench.action.moveEditorToNewWindow",
+    "when": "activeEditor"
+  },
+  {
+    "key": "alt+m shift+n",
+    "command": "workbench.action.copyEditorToNewWindow",
+    "when": "activeEditor"
   }
 ]
