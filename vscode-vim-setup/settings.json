@@ -315,7 +315,7 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.jump.treesitterSelection"]
+      "commands": ["flash-vscode.startSelection"]
     },
     {
       "before": ["z"],
@@ -676,14 +676,14 @@
       "before": ["z", "z"],
       "after": ["z"]
     },
-    {
-      "before": ["J"],
-      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["workbench.action.openNextRecentlyUsedEditor"]
-    },
+    // {
+    //   "before": ["J"],
+    //   "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    // },
+    // {
+    //   "before": ["K"],
+    //   "commands": ["workbench.action.openNextRecentlyUsedEditor"]
+    // },
     //leader
     {
       "before": ["<leader>", "%"],
@@ -1081,6 +1081,7 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "typescript.updateImportsOnFileMove.enabled": "never",
+  "geminicodeassist.displayInlineContextHint": false,
   "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

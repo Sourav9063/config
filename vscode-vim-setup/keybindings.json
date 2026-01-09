@@ -21,16 +21,16 @@
   //   "command": "cursorDown",
   //   "when": "textInputFocus"
   // },
-  {
-    "key": "alt+h",
-    "command": "cursorLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "alt+l",
-    "command": "cursorRight",
-    "when": "textInputFocus"
-  },
+  // {
+  //   "key": "alt+h",
+  //   "command": "cursorLeft",
+  //   "when": "textInputFocus"
+  // },
+  // {
+  //   "key": "alt+l",
+  //   "command": "cursorRight",
+  //   "when": "textInputFocus"
+  // },
   {
     "key": "shift+alt+n",
     "command": "-cursorPageDownSelect",
@@ -133,26 +133,26 @@
     "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
   },
-  {
-    "key": "shift+alt+k",
-    "command": "cursorUpSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+j",
-    "command": "cursorDownSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+l",
-    "command": "cursorRightSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+h",
-    "command": "cursorLeftSelect",
-    "when": "textInputFocus"
-  },
+  // {
+  //   "key": "shift+alt+k",
+  //   "command": "cursorUpSelect",
+  //   "when": "textInputFocus"
+  // },
+  // {
+  //   "key": "shift+alt+j",
+  //   "command": "cursorDownSelect",
+  //   "when": "textInputFocus"
+  // },
+  // {
+  //   "key": "shift+alt+l",
+  //   "command": "cursorRightSelect",
+  //   "when": "textInputFocus"
+  // },
+  // {
+  //   "key": "shift+alt+h",
+  //   "command": "cursorLeftSelect",
+  //   "when": "textInputFocus"
+  // },
   //git
   {
     "key": "alt+s h",
@@ -2390,5 +2390,20 @@
     "key": "alt+m shift+n",
     "command": "workbench.action.copyEditorToNewWindow",
     "when": "activeEditor"
-  }
+  },
+  {
+    "key": "alt+q",
+    "command": "gemini.diff.cancel",
+    "when": "gemini.diff.isVisible"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "flash-vscode.jump.lineDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "-flash-vscode.jump.lineDown",
+    "when": "editorTextFocus"
+  },
 ]
