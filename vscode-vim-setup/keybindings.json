@@ -503,10 +503,10 @@
     }
   },
   //minimap
-  {
-    "key": "capslock",
-    "command": "editor.action.toggleMinimap"
-  },
+  // {
+  //   "key": "capslock",
+  //   "command": "editor.action.toggleMinimap"
+  // },
   // delete left
   // {
   //   "key": "d",
@@ -771,6 +771,30 @@
   },
   {
     "key": "alt+o alt+k",
+    "command": "workbench.action.openNextRecentlyUsedEditor"
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.openPreviousRecentlyUsedEditor"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.openNextRecentlyUsedEditor"
+  },
+  // {
+  //   "key": "alt+h alt+h",
+  //   "command": "workbench.action.openPreviousRecentlyUsedEditor"
+  // },
+  // {
+  //   "key": "alt+l alt+l",
+  //   "command": "workbench.action.openNextRecentlyUsedEditor"
+  // },
+  {
+    "key": "alt+[",
+    "command": "workbench.action.openPreviousRecentlyUsedEditor"
+  },
+  {
+    "key": "alt+]",
     "command": "workbench.action.openNextRecentlyUsedEditor"
   },
   {
@@ -1663,42 +1687,6 @@
     "command": "workbench.action.quickOpen",
     "args": ">copilot "
   },
-  //codeium
-  {
-    "key": "alt+o u",
-    "command": "codeium.openCodeiumCommand",
-    "when": "codeium.commandEnabled && editorTextFocus"
-  },
-  {
-    "key": "alt+l",
-    "command": "-codeium.chatAboutBlock",
-    "when": "editorTextFocus && !inlineSuggestionsVisible"
-  },
-  {
-    "key": "alt+a",
-    "command": "-codeium.diffActionAccept",
-    "when": "editorTextFocus && !inlineSuggestionsVisible"
-  },
-  {
-    "key": "alt+f",
-    "command": "-codeium.diffActionFollowup",
-    "when": "editorTextFocus && !inlineSuggestionsVisible"
-  },
-  {
-    "key": "alt+r",
-    "command": "-codeium.diffActionReject",
-    "when": "editorTextFocus && !inlineSuggestionsVisible"
-  },
-  {
-    "key": "alt+c",
-    "command": "-codeium.cancelCodeiumCommand",
-    "when": "codeium.commandEnabled && editorTextFocus"
-  },
-  {
-    "key": "alt+u c",
-    "command": "workbench.action.quickOpen",
-    "args": ">codeium "
-  },
   //roo-cline
   {
     "key": "alt+v t",
@@ -1800,7 +1788,7 @@
     "when": "listFocus && !inputFocus"
   },
   {
-    "key": "f",
+    "key": "/",
     "command": "list.find",
     "when": "listFocus && listSupportsFind && !inputFocus"
   },
@@ -2406,4 +2394,14 @@
     "command": "-flash-vscode.jump.lineDown",
     "when": "editorTextFocus"
   },
+  {
+    "key": "shift+alt+k",
+    "command": "flash-vscode.jump.lineUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "-flash-vscode.jump.lineUp",
+    "when": "editorTextFocus"
+  }
 ]
