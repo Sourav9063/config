@@ -306,16 +306,24 @@
       "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     },
     {
-      "before": ["<BS>"],
-      "commands": ["flash-vscode.backspace"]
-    },
-    {
       "before": ["f"],
       "commands": ["flash-vscode.startSelection"]
     },
     {
       "before": ["F"],
       "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["t"],
+      "commands": ["flash-vscode.remoteTreesitterSelection"]
+    },
+    {
+      "before": ["T"],
+      "commands": ["flash-vscode.jump.treesitterSelection"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     },
     {
       "before": ["z"],
@@ -657,12 +665,20 @@
       "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": ["F"],
-      "commands": ["flash-vscode.jump.treesitterSelection"]
-    },
-    {
       "before": ["f"],
       "commands": ["flash-vscode.start"]
+    },
+    {
+      "before": ["F"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["t"],
+      "commands": ["flash-vscode.remoteTreesitterSelection"]
+    },
+    {
+      "before": ["T"],
+      "commands": ["flash-vscode.jump.treesitterSelection"]
     },
     {
       "before": ["<BS>"],
@@ -946,18 +962,6 @@
     {
       "before": ["H"],
       "after": ["^"]
-    },
-    {
-      "before": ["f"],
-      "commands": ["flash-vscode.start"]
-    },
-    {
-      "before": ["F"],
-      "commands": ["flash-vscode.jump.treesitterSelection"]
-    },
-    {
-      "before": ["<BS>"],
-      "commands": ["flash-vscode.backspace"]
     },
     {
       "before": ["<leader>", "%"],
