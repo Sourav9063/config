@@ -315,11 +315,11 @@
     },
     {
       "before": ["t"],
-      "commands": ["flash-vscode.remoteTreesitterSelection"]
+      "commands": ["flash-vscode.jump.treesitterSelection"]
     },
     {
       "before": ["T"],
-      "commands": ["flash-vscode.jump.treesitterSelection"]
+      "commands": ["flash-vscode.remoteTreesitterSelection"]
     },
     {
       "before": ["<BS>"],
@@ -670,15 +670,15 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.startSelection"]
-    },
-    {
-      "before": ["t"],
       "commands": ["flash-vscode.remoteTreesitterSelection"]
     },
     {
-      "before": ["T"],
+      "before": ["t"],
       "commands": ["flash-vscode.jump.treesitterSelection"]
+    },
+    {
+      "before": ["T"],
+      "commands": ["flash-vscode.remoteTreesitterSelection"]
     },
     {
       "before": ["<BS>"],
