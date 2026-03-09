@@ -152,7 +152,7 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
@@ -670,15 +670,15 @@
     },
     {
       "before": ["F"],
-      "commands": ["flash-vscode.remoteTreesitterSelection"]
-    },
-    {
-      "before": ["t"],
       "commands": ["flash-vscode.jump.treesitterSelection"]
     },
     {
-      "before": ["T"],
+      "before": ["t"],
       "commands": ["flash-vscode.remoteTreesitterSelection"]
+    },
+    {
+      "before": ["T"],
+      "commands": ["flash-vscode.startSelection"]
     },
     {
       "before": ["<BS>"],
@@ -1051,7 +1051,6 @@
   },
   "geminicodeassist.inlineSuggestions.enableAuto": true,
   "geminicodeassist.enableTelemetry": false,
-  "geminicodeassist.updateChannel": "Insiders",
   "roo-cline.deniedCommands": [],
   "kilo-code.allowedCommands": [
     "npm test",
@@ -1062,7 +1061,6 @@
     "git show"
   ],
   "kilo-code.deniedCommands": [],
-  "geminicodeassist.inlineSuggestions.suggestionSpeed": "Slow",
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -1075,17 +1073,27 @@
   "workbench.sideBar.location": "right",
   "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
   "editor.gotoLocation.multipleDefinitions": "goto",
-  "[yaml]": {
-    "diffEditor.ignoreTrimWhitespace": false
-  },
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
-  "geminicodeassist.project": "rational-catfish-lm6vf",
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "css.lint.unknownAtRules": "ignore",
   "typescript.updateImportsOnFileMove.enabled": "never",
   "geminicodeassist.displayInlineContextHint": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "chat.agentsControl.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "geminicodeassist.inlineSuggestions.nextEditPredictions": true,
+  "geminicodeassist.project": "responsive-casing-h3v9t",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  },
+  "editor.formatOnSave": true,
+  "biome.requireConfiguration": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
