@@ -180,7 +180,7 @@
     "when": "workbench.scm.active",
   },
   {
-    "key": "alt+s alt+c",
+    "key": "alt+s shift+b",
     "command": "git.checkout",
     "when": "!operationInProgress",
   },
@@ -284,6 +284,73 @@
     "key": "alt+s c",
     "command": "workbench.action.quickOpen",
     "args": ">git ",
+  },
+  // git commit / push / pull / fetch
+  {
+    "key": "alt+s alt+c",
+    "command": "git.commit",
+    "when": "!operationInProgress",
+  },
+  {
+    "key": "alt+s shift+c",
+    "command": "git.commitStaged",
+    "when": "!operationInProgress",
+  },
+  {
+    "key": "alt+s p",
+    "command": "git.push",
+    "when": "!operationInProgress",
+  },
+  {
+    "key": "alt+s shift+p",
+    "command": "git.pull",
+    "when": "!operationInProgress",
+  },
+  {
+    "key": "alt+s alt+p",
+    "command": "git.fetch",
+    "when": "!operationInProgress",
+  },
+  // git stash
+  {
+    "key": "alt+s t",
+    "command": "git.stash",
+    "when": "!operationInProgress",
+  },
+  {
+    "key": "alt+s shift+t",
+    "command": "git.stashPop",
+    "when": "!operationInProgress",
+  },
+  // git branch
+  {
+    "key": "alt+s b",
+    "command": "git.branchFrom",
+    "when": "!operationInProgress",
+  },
+  {
+    "key": "alt+s alt+b",
+    "command": "git.deleteBranch",
+    "when": "!operationInProgress",
+  },
+  // open all changes / close all diffs
+  {
+    "key": "alt+s a",
+    "command": "git.openAllChanges",
+  },
+  {
+    "key": "alt+s shift+a",
+    "command": "git.closeAllDiffEditors",
+  },
+  // git blame toggle (line annotation)
+  {
+    "key": "alt+s l",
+    "command": "git.toggleLineBlame",
+  },
+  // timeline focus
+  {
+    "key": "alt+s shift+h",
+    "command": "timeline.focus",
   },
   {
     "key": "alt+shift+j",

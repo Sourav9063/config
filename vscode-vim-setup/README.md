@@ -232,24 +232,44 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 
 | Key                 | Action                                              |
 | ------------------- | --------------------------------------------------- |
+| **Staging**         |                                                     |
 | `alt+s s`           | Stage Hunk / Stage Selected Ranges                  |
 | `alt+s alt+s`       | Stage Current File (`git.stage`)                    |
 | `alt+s shift+s`     | Stage All Changes (`git.stageAll`)                  |
 | `alt+s u`           | Unstage Hunk / Unstage Selected Ranges              |
 | `alt+s alt+u`       | Unstage Current File (`git.unstage`)                |
 | `alt+s shift+u`     | Unstage All Changes (`git.unstageAll`)              |
-| `alt+s d`           | Toggle Collapse Unchanged Regions (Diff)            |
+| **Commit / Sync**   |                                                     |
+| `alt+s alt+c`       | Commit (`git.commit`)                               |
+| `alt+s shift+c`     | Commit Staged (`git.commitStaged`)                  |
+| `alt+s p`           | Push (`git.push`)                                   |
+| `alt+s shift+p`     | Pull (`git.pull`)                                   |
+| `alt+s alt+p`       | Fetch (`git.fetch`)                                 |
+| **Branch**          |                                                     |
+| `alt+s b`           | Branch From (`git.branchFrom`)                      |
+| `alt+s shift+b`     | Checkout / Switch Branch (`git.checkout`)            |
+| `alt+s alt+b`       | Delete Branch (`git.deleteBranch`)                  |
+| **Stash**           |                                                     |
+| `alt+s t`           | Stash (`git.stash`)                                 |
+| `alt+s shift+t`     | Stash Pop (`git.stashPop`)                          |
+| **Diff Navigation** |                                                     |
 | `alt+s j`/`k`       | Next/Previous Change (Compare Editor/Editor)        |
-| `alt+s shift+j`/`k` | Next/Previous Dirty Diff Change (Editor)            |
-| `alt+s c`           | Git Command Palette (`>git `)                       |
-| `alt+s alt+c`       | Git Checkout (`git.checkout`)                       |
-| `alt+s shift+r`     | Clean Working Tree (`git.clean`)                    |
-| `alt+s h`           | Show Git File History (`git-file-history`)          |
+| `alt+s alt+j`/`k`   | Next/Previous Dirty Diff Change (Editor)            |
+| `alt+s d`           | Toggle Collapse Unchanged Regions (Diff)            |
+| `alt+s a`           | Open All Changes (`git.openAllChanges`)             |
+| `alt+s shift+a`     | Close All Diff Editors (`git.closeAllDiffEditors`)  |
+| **Revert / Clean**  |                                                     |
 | `alt+s r`           | Revert Change (`git.revertChange`)                  |
 | `alt+s alt+r`       | Revert Selected Ranges (`git.revertSelectedRanges`) |
+| `alt+s shift+r`     | Clean Working Tree (`git.clean`)                    |
+| **View / History**  |                                                     |
 | `alt+s o`           | Open Change / Open File (Diff Editor)               |
 | `alt+s shift+o`     | View Changes (`git.viewChanges`)                    |
+| `alt+s h`           | Show Git File History (`git-file-history`)          |
+| `alt+s shift+h`     | Focus Timeline View (`timeline.focus`)              |
+| `alt+s l`           | Toggle Line Blame (`git.toggleLineBlame`)           |
 | `alt+s f`           | Focus SCM View (`workbench.view.scm`)               |
+| `alt+s c`           | Git Command Palette (`>git `)                       |
 
 ## Window, Tab & Editor Group Management
 
