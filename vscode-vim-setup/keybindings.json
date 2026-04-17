@@ -195,6 +195,16 @@
     "when": "!operationInProgress",
   },
   {
+    "key": "alt+s j",
+    "command": "multiDiffEditor.goToNextChange",
+    "when": "activeEditor == 'multiDiffEditor'"
+  },
+  {
+    "key": "alt+s k",
+    "command": "multiDiffEditor.goToPreviousChange",
+    "when": "activeEditor == 'multiDiffEditor'"
+  },
+  {
     "key": "alt+s d",
     "command": "diffEditor.toggleCollapseUnchangedRegions",
     "when": "isInDiffEditor",

@@ -281,6 +281,7 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | **Diff Navigation** |                                                     |
 | `alt+s j`/`k`       | Next/Previous Change (Compare Editor/Editor)        |
 | `alt+s alt+j`/`k`   | Next/Previous Dirty Diff Change (Editor)            |
+| `alt+j`/`k`         | Next/Previous Change (Multi-Diff Editor)            |
 | `alt+s d`           | Toggle Collapse Unchanged Regions (Diff)            |
 | `alt+s a`           | Open All Changes (`git.openAllChanges`)             |
 | `alt+s shift+a`     | Close All Diff Editors (`git.closeAllDiffEditors`)  |
