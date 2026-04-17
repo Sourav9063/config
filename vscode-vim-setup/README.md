@@ -14,9 +14,6 @@ _Includes bindings from `vim.normalModeKeyBindingsNonRecursive`_
 | `0` | Move to absolute start of line |
 | `^` | Move to first non-blank character in the line |
 | `$` | Move to end of line |
-| `f{char}`/`F{char}` | Find character forward/backward on line |
-| `t{char}`/`T{char}` | Move cursor _till_ before character forward/backward |
-| `;`/`,` | Repeat last `f`/`t`/`F`/`T` search forward/backward |
 | `gg` | Go to the first line of the file |
 | `G` (Shift+g) | Go to the last line of the file |
 | `ctrl+u`/`ctrl+d` | Page up/down |
@@ -38,45 +35,40 @@ _Includes bindings from `vim.normalModeKeyBindingsNonRecursive`_
 | `%` | Go to matching bracket/brace/paren |
 | `Enter` | Insert new line below and return to Normal mode (`o<Esc>`) |
 | `g Enter` | Insert new line above and return to Normal mode (`O<Esc>`) |
-| `z n` | Navigate Back (VSCode History) (`workbench.action.navigateBack`) |
-| `z m` | Navigate Forward (VSCode History) (`workbench.action.navigateForward`) |
-| `<leader> j` | Open Previous Recently Used Editor |
-| `<leader> k` | Open Next Recently Used Editor |
-| `t` | Custom mapping (`<leader><leader>s`) |
-| `F` | Custom mapping (`<leader><leader>s`) |
-| `T` | Custom mapping (`<leader><leader><leader>j`) |
-| `z` | Custom mapping (`<leader><leader>`) |
-| `Z` | Custom mapping (`<leader><leader><leader>b d`) |
-| `z z` | Custom mapping (`z`) |
+| `z n` | Navigate Back (VSCode History) |
+| `z m` | Navigate Forward (VSCode History) |
 | `u` | Undo |
 | `U` | Redo |
 
+### Flash (Normal Mode)
+
+| Key | Action |
+|-----|--------|
+| `f` | Flash jump (`flash-vscode.start`) |
+| `F` | Flash treesitter selection (`flash-vscode.jump.treesitterSelection`) |
+| `t` | Flash remote treesitter selection (`flash-vscode.remoteTreesitterSelection`) |
+| `T` | Flash selection mode (`flash-vscode.startSelection`) |
+| `Backspace` | Flash backspace (`flash-vscode.backspace`) |
+| `shift+alt+j` | Flash line down (`flash-vscode.jump.lineDown`) |
+| `shift+alt+k` | Flash line up (`flash-vscode.jump.lineUp`) |
+| `z` | Easymotion (`<leader><leader>`) |
+| `z z` | Original `z` behavior |
+
 ## VSCode Specific Navigation & Code Intelligence
 
-| Key                | Action                                                                 |
-| ------------------ | ---------------------------------------------------------------------- |
-| `alt+k`/`j`        | Move cursor up/down                                                    |
-| `alt+h`/`l`        | Move cursor left/right                                                 |
-| `alt+,`/`alt+.`    | Navigate back/forward in VSCode history                                |
-| `shift+alt+,`/`.`  | Navigate back/forward in Edit Locations History                        |
-| `ctrl+alt+,`/`.`   | Navigate Previous/Next Editor (in group)                               |
-| `alt+n d`          | Go to definition (`editor.action.revealDefinition`)                    |
-| `alt+n i`          | Go to implementation (`editor.action.goToImplementation`)              |
-| `alt+n h`          | Preview definition (`editor.action.showDefinitionPreviewHover`)        |
-| `alt+u alt+u`      | Go to references / Close reference search                              |
-| `j`/`k` (refs)     | Go to Next/Previous reference (in reference search view)               |
-| `g+r` (refs)       | Close reference search (when reference search visible)                 |
-| `alt+a b`          | Jump to matching bracket (standard Vim `%`)                            |
-| `alt+a alt+b`      | Jump to matching bracket (`editor.action.jumpToBracket`)               |
-| `alt+i a`          | Trigger quick fix actions (`editor.action.quickFix`)                   |
-| `alt+i alt+a`      | Trigger quick fix actions (`editor.action.quickFix`)                   |
-| `alt+i shift+a`    | Apply auto fix (`editor.action.autoFix`)                               |
-| `ctrl+shift+alt+.` | Apply auto fix (`editor.action.autoFix`)                               |
-| `alt+i c`          | Insert Console Log (`turboConsoleLog.displayLogMessage`)               |
-| `alt+i d`          | Delete All Console Logs (`turboConsoleLog.deleteAllLogMessages`)       |
-| `alt+i /`          | Comment All Console Logs (`turboConsoleLog.commentAllLogMessages`)     |
-| `alt+i shift+/`    | Uncomment All Console Logs (`turboConsoleLog.uncommentAllLogMessages`) |
-| `alt+n o`          | Open Link under cursor (`editor.action.openLink`)                      |
+| Key                | Action                                                    |
+| ------------------ | --------------------------------------------------------- |
+| `alt+,`/`alt+.`    | Navigate back/forward in VSCode history                   |
+| `shift+alt+,`/`.`  | Navigate back/forward in Edit Locations History           |
+| `ctrl+alt+,`/`.`   | Navigate Previous/Next Editor (in group)                  |
+| `alt+h`/`alt+l`    | Open Previous/Next Recently Used Editor                   |
+| `alt+[`/`alt+]`    | Open Previous/Next Recently Used Editor                   |
+| `alt+u alt+u`      | Go to references / Close reference search                 |
+| `j`/`k` (refs)     | Go to Next/Previous reference (in reference search view)  |
+| `g+r` (refs)       | Close reference search (when reference search visible)    |
+| `alt+a alt+b`      | Jump to matching bracket (`editor.action.jumpToBracket`)  |
+| `alt+a shift+b`    | Select to matching bracket (`editor.action.selectToBracket`) |
+| `alt+;`            | Focus Active Editor Group                                 |
 
 ## Selection & Visual Mode
 
@@ -91,24 +83,29 @@ _Includes bindings from `vim.visualModeKeyBindingsNonRecursive`_
 | `~` | Toggle case of selection |
 | `gb` | Add next occurrence to selection |
 | `al`/`ah` | Expand/Shrink selection (smartSelect) |
-| `alt+a alt+l` | Expand selection (smartSelect) |
-| `alt+a alt+h` | Shrink selection (smartSelect) |
-| `alt+a shift+b` | Select to matching bracket (`editor.action.selectToBracket`) |
-| `gq` | Format selection (Standard Vim) / Quick Fix (Settings) |
+| `ao`/`ai` | Balance HTML tags outward/inward (Emmet) |
+| `gq` | Quick Fix (Settings) |
 | `gr` | Go to References (Settings) |
+| `gf` | Go to Implementation |
+| `gp` | Peek Definition |
+| `gh` | Show Definition Preview Hover |
+| `gH` | Go to References |
 | `p` | Paste Before (mapped to `P`) |
-| `t` | Custom mapping (`<leader><leader>s`) |
-| `F` | Custom mapping (`<leader><leader>s`) |
-| `T` | Custom mapping (`<leader><leader><leader>j`) |
-| `z` | Custom mapping (`<leader><leader>`) |
-| `Z` | Custom mapping (`<leader><leader><leader>b d`) |
-| `z z` | Custom mapping (`z`) |
-| `g /` | Search forward for visual selection |
-| `g ?` | Search backward for visual selection |
-| `shift+alt+k`/`j` | Select line up/down (`cursorUp/DownSelect`) |
-| `shift+alt+h`/`l` | Select left/right (`cursorLeft/RightSelect`) |
 | `H` | Select to first non-blank character in the line (`^`) |
 | `L` | Select to the end of the line (`$`) |
+| `g /` | Search forward for visual selection |
+| `g ?` | Search backward for visual selection |
+
+### Flash (Visual Mode)
+
+| Key | Action |
+|-----|--------|
+| `f`/`F` | Flash selection mode (`flash-vscode.startSelection`) |
+| `t` | Flash treesitter selection (`flash-vscode.jump.treesitterSelection`) |
+| `T` | Flash remote treesitter selection (`flash-vscode.remoteTreesitterSelection`) |
+| `Backspace` | Flash backspace (`flash-vscode.backspace`) |
+| `z` | Easymotion (`<leader><leader>`) |
+| `z z` | Original `z` behavior |
 
 ## Editing (Insert Mode)
 
@@ -121,30 +118,40 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | `I Enter` | Escape, then insert new line above (`<Esc>`, `O`) |
 | `ctrl+n`/`p` | Select next/previous suggestion (if suggestion widget visible) |
 
-## Editing (VSCode Specific & Refactoring)
+## Code Actions & Suggestions
 
-| Key                  | Action                                                         |
-| -------------------- | -------------------------------------------------------------- |
-| `alt+k`/`j` (Normal) | Move current line up/down                                      |
-| `alt+i f`            | Trigger/Hide code suggestions (`editor.action.triggerSuggest`) |
-| `alt+i alt+f`        | Trigger/Hide code suggestions                                  |
-| `alt+i i`            | Trigger/Hide inline suggestions (Copilot)                      |
-| `alt+i alt+i`        | Trigger/Hide inline suggestions                                |
-| `alt+i j`/`k`        | Show Next/Previous inline suggestion                           |
-| `alt+i l`            | Accept Next Word of inline suggestion                          |
-| `alt+i alt+l`        | Commit (Accept) inline suggestion                              |
-| `alt+enter`          | Commit (Accept) inline suggestion                              |
-| `alt+tab`            | Commit (Accept) inline suggestion                              |
-| `alt+a w`            | Wrap selection with Emmet abbreviation                         |
-| `alt+a o`/`i`        | Balance HTML tags outward/inward (Emmet)                       |
-| `alt+a alt+o`/`i`    | Balance HTML tags outward/inward (Emmet)                       |
-| `alt+a alt+r`        | Remove matching brackets (`editor.action.removeBrackets`)      |
-| `alt+n shift+r`      | Remove Unused Imports (JS/TS)                                  |
-| `alt+b`              | Delete Left (like Backspace)                                   |
-| `ctrl+shift+0`       | Reset Editor Font Zoom (`editor.action.fontZoomReset`)         |
-| `ctrl+shift+=`/`-`   | Editor Font Zoom In/Out (`editor.action.fontZoomInOut`)        |
-| `alt+a \`            | Split Vue Editors (`vue.action.splitEditors`)                  |
-| `alt+a -`            | Toggle Split Editor Layout (Side-by-Side)                      |
+| Key                 | Action                                                         |
+| ------------------- | -------------------------------------------------------------- |
+| **Code Actions**    |                                                                |
+| `alt+a a`           | Trigger quick fix actions (`editor.action.quickFix`)           |
+| `alt+a alt+a`       | Trigger quick fix actions (`editor.action.quickFix`)           |
+| `alt+a shift+a`     | Apply auto fix (`editor.action.autoFix`)                       |
+| `ctrl+shift+alt+.`  | Apply auto fix (`editor.action.autoFix`)                       |
+| **Suggestions**     |                                                                |
+| `alt+a s`           | Trigger/Hide code suggestions (`editor.action.triggerSuggest`) |
+| `alt+a alt+s`       | Trigger/Hide code suggestions                                  |
+| `alt+a d`           | Toggle suggestion details                                      |
+| `alt+j`             | Trigger suggest / Select next (Insert mode, vim active)        |
+| `alt+k`             | Select previous suggestion                                     |
+| `alt+l`             | Accept selected suggestion / code action                       |
+| `tab`/`shift+tab`   | Next/Previous suggestion (when focused)                        |
+| **Inline Suggest**  |                                                                |
+| `alt+a i`           | Trigger/Hide inline suggestions                                |
+| `alt+a alt+i`       | Trigger/Hide inline suggestions                                |
+| `alt+a j`/`k`       | Show Next/Previous inline suggestion                           |
+| `alt+a l`           | Accept Next Word of inline suggestion                          |
+| `alt+a alt+l`       | Commit (Accept) inline suggestion                              |
+| `shift+enter`       | Commit (Accept) inline suggestion                              |
+| **Editing**         |                                                                |
+| `alt+a w`           | Wrap selection with Emmet abbreviation                         |
+| `alt+a alt+o`/`i`   | Balance HTML tags outward/inward (Emmet)                       |
+| `alt+a alt+r`       | Remove matching brackets (`editor.action.removeBrackets`)      |
+| `alt+a alt+s`       | Toggle Locked Scrolling (Sync Scrolling)                       |
+| `alt+a \`           | Split Vue Editors (`vue.action.splitEditors`)                  |
+| `alt+a -`           | Toggle Split Editor Layout (Side-by-Side)                      |
+| `alt+b`             | Delete Left (like Backspace)                                   |
+| `ctrl+shift+0`      | Reset Editor Font Zoom                                         |
+| `ctrl+shift+=`/`-`  | Editor Font Zoom In/Out                                        |
 
 ## Text Objects (Combine with `d`, `c`, `y`)
 
@@ -178,55 +185,74 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 
 ## File Explorer Navigation (When Focused)
 
-| Key             | Action                                |
-| --------------- | ------------------------------------- |
-| `j`/`k`         | Move selection down/up                |
-| `h`             | Collapse selected folder              |
-| `l`             | Select/Expand selected item           |
-| `o`             | Toggle expand/collapse folder         |
-| `ctrl+u`/`d`    | Page up/down                          |
-| `gg`/`G`        | Go to first/last item                 |
-| `f`             | Filter/Find items in the list         |
-| `enter`         | Select/Open item                      |
-| `v`             | Open file in a side split             |
-| `a`             | Add new file (`explorer.newFile`)     |
-| `A` (Shift+a)   | Add new folder (`explorer.newFolder`) |
-| `alt+n shift+n` | Add new folder (`explorer.newFolder`) |
-| `d`             | Delete selected file/folder           |
-| `y`             | Copy selected file/folder             |
-| `x`             | Cut selected file/folder              |
-| `p`             | Paste copied/cut file/folder          |
-| `r`             | Rename selected file/folder           |
-| `R` (Shift+r)   | Refresh file explorer                 |
-| `zo`/`zO`       | Expand folder                         |
-| `zc`/`zC`       | Collapse folder                       |
-| `za`/`zA`       | Toggle expand/collapse                |
-| `zm`/`zM`       | Collapse All                          |
+| Key           | Action                                |
+| ------------- | ------------------------------------- |
+| `j`/`k`       | Move selection down/up                |
+| `h`           | Collapse selected folder              |
+| `l`           | Select/Expand selected item           |
+| `o`           | Toggle expand/collapse folder         |
+| `ctrl+u`/`d`  | Page up/down                          |
+| `gg`/`G`      | Go to first/last item                 |
+| `/`           | Find in list                          |
+| `enter`       | Select/Open item                      |
+| `v`           | Open file in a side split             |
+| `a`           | Add new file (`explorer.newFile`)     |
+| `A` (Shift+a) | Add new folder (`explorer.newFolder`) |
+| `d`           | Delete selected file/folder           |
+| `y`           | Copy selected file/folder             |
+| `x`           | Cut selected file/folder              |
+| `p`           | Paste copied/cut file/folder          |
+| `r`           | Rename selected file/folder           |
+| `R` (Shift+r) | Refresh file explorer                 |
+| `zo`/`zO`     | Expand folder                         |
+| `zc`/`zC`     | Collapse folder                       |
+| `za`/`zA`     | Toggle expand/collapse                |
+| `zm`/`zM`     | Collapse All                          |
 
 ## List Navigation (Quick Open, Outline, etc.)
 
-| Key                      | Action                                |
-| ------------------------ | ------------------------------------- |
-| `j`/`k`                  | Focus down/up                         |
-| `h`/`l`                  | Collapse/Select                       |
-| `ctrl+u`/`d`             | Focus page up/down                    |
-| `gg`/`G`                 | Focus first/last                      |
-| `o`                      | Toggle Expand                         |
-| `f`                      | Find in list (if supported)           |
-| `ctrl+f`                 | Toggle Find Mode                      |
-| `enter`                  | Select / Close Find (if Find open)    |
-| `ctrl+n`/`p`             | Focus down/up                         |
-| `alt+k`/`j` (Quick Open) | Navigate Previous/Next in File Picker |
+| Key          | Action                             |
+| ------------ | ---------------------------------- |
+| `j`/`k`      | Focus down/up                      |
+| `h`/`l`      | Collapse/Select                    |
+| `ctrl+u`/`d` | Focus page up/down                 |
+| `gg`/`G`     | Focus first/last                   |
+| `o`          | Toggle Expand                      |
+| `/`          | Find in list (if supported)        |
+| `ctrl+f`     | Toggle Find Mode                   |
+| `enter`      | Select / Close Find (if Find open) |
+| `ctrl+n`/`p` | Focus down/up                      |
+| `alt+j`/`k`  | Focus down/up                      |
 
-## File Management (General Commands)
+## Quick Open (`alt+o` prefix)
 
-| Key           | Action                                               |
-| ------------- | ---------------------------------------------------- |
-| `alt+n n`     | New File (`fileutils.newFile`)                       |
-| `alt+n alt+n` | New File at Project Root (`fileutils.newFileAtRoot`) |
-| `alt+n alt+d` | Duplicate Current File (`fileutils.duplicateFile`)   |
-| `alt+n alt+m` | Move/Rename Current File (`fileutils.moveFile`)      |
-| `alt+f c`     | Copy Relative Path of Current File                   |
+| Key              | Action                                    |
+| ---------------- | ----------------------------------------- |
+| `alt+o o`        | Quick Open File (toggle)                  |
+| `alt+o alt+o`    | Quick Open File (toggle)                  |
+| `alt+o r`        | Show All Editors by Most Recently Used    |
+| `alt+o j`        | Open Previous Editor from History         |
+| `alt+o alt+j`    | Open Previous Recently Used Editor        |
+| `alt+o alt+k`    | Open Next Recently Used Editor            |
+| `alt+o f`        | Quick Text Search                         |
+| `alt+o alt+f`    | Open New Search Editor                    |
+| `alt+o shift+f`  | Open New Search Editor to Side            |
+| `alt+o t`        | Quick Open Terminals                      |
+| `alt+o v`        | Quick Open Views                          |
+| `alt+o a`        | Quick Open Help (`? `)                    |
+| `alt+o c`        | Show Commands                             |
+| `alt+shift+o`    | Show Commands                             |
+| `alt+o s`        | Show All Symbols                          |
+| `alt+o alt+s`    | Go to Symbol in File                      |
+| `alt+o shift+s`  | Show All Symbols                          |
+| `alt+o l`        | Customize Layout                          |
+| `alt+o alt+e`    | Open Quick Chat                           |
+| `alt+o e`        | Chat Command Palette (`>chat `)           |
+| `alt+o shift+e`  | Copilot Command Palette (`>copilot `)     |
+| `alt+o m`        | Quick Open with Modes                     |
+| `alt+o alt+r`    | Open Recent                               |
+| `alt+o shift+r`  | Reload Window                             |
+| `,` (in picker)  | Switch to Quick Text Search from picker   |
 
 ## Git Integration
 
@@ -275,7 +301,6 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 
 | Key                         | Action                                               |
 | --------------------------- | ---------------------------------------------------- |
-| `alt+g 1-4`                 | Focus Editor Group 1-4                               |
 | `alt+g k`/`j`/`h`/`l`       | Navigate Focus Up/Down/Left/Right between groups     |
 | `alt+g alt+k`/`j`/`h`/`l`   | Move Editor to Group Above/Below/Left/Right          |
 | `alt+shift+g k`/`j`/`h`/`l` | Create New Group Above/Below/Left/Right & Quick Open |
@@ -286,7 +311,8 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | `alt+g p`                   | Pin/Unpin Active Editor Tab                          |
 | `alt+g o`                   | Toggle Editor Group Lock                             |
 | `alt+g r`                   | Even Editor Widths                                   |
-| `alt+g t`                   | Toggle Editor Widths (Split Vertically?)             |
+| `alt+g t`                   | Toggle Editor Widths                                 |
+| `alt+g 2`/`3`/`4`           | Focus Editor Group 2/3/4                             |
 | `alt+q q`/`alt+q alt+q`     | Close Active Editor                                  |
 | `alt+q shift+q`             | Close All Editors                                    |
 | `alt+q g`                   | Close Editors in Group                               |
@@ -296,7 +322,8 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | `ctrl+w _`                  | Toggle Editor Widths                                 |
 | `ctrl+w >`/`<`              | Increase/Decrease View Width                         |
 | `ctrl+w +`/`-`              | Increase/Decrease View Height                        |
-| `ctrl+pageup`/`pagedown`    | Navigate editor tab history back/forward             |
+| `alt+m n`                   | Move Editor to New Window                            |
+| `alt+m shift+n`             | Copy Editor to New Window                            |
 
 ## Terminal Control
 
@@ -306,8 +333,8 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | `alt+t alt+t`        | Create New Terminal in Main Editor Area                 |
 | `alt+t n`            | Create New Terminal in Panel                            |
 | `alt+t shift+n`      | Split Active Terminal                                   |
-| `alt+t c`/`alt+t r`  | Clear Terminal                                          |
-| `alt+t r`            | Toggle Tab Focus Mode (Also Clear)                      |
+| `alt+t c`            | Clear Terminal                                          |
+| `alt+t r`            | Toggle Tab Focus Mode                                   |
 | `alt+t f`            | Focus Terminal Tabs View                                |
 | `alt+t o`            | Quick Open Terminals (`workbench.action.quickOpenTerm`) |
 | `alt+t p`            | Move Terminal Editor to Panel / Panel to Editor         |
@@ -319,6 +346,7 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | `alt+t -`/`=`        | Terminal Font Zoom Out/In                               |
 | `alt+m t`            | Toggle Terminal Panel visibility (when terminal active) |
 | `ctrl+Escape`        | Focus Active Editor Group (from Terminal)               |
+| `shift+enter`        | Send newline sequence to terminal                       |
 
 ## Search & Replace
 
@@ -330,47 +358,134 @@ _Includes bindings from `vim.insertModeKeyBindings`_
 | `alt+f f`               | Find in Files (Project-wide search)                        |
 | `alt+f n`/`shift+n`     | Go to Next/Previous Search Result (Project Search Results) |
 | `alt+f alt+f`           | Find in Current Editor (`actions.find`)                    |
-| `alt+f alt+n`/`shift+n` | Next/Previous Find Match (Current Editor)                  |
-| `alt+o s`               | Show All Symbols in Current File                           |
-| `alt+o alt+s`           | Go to Symbol in Workspace (Project-wide)                   |
-| `alt+o f`               | Quick Text Search (`workbench.action.quickTextSearch`)     |
+| `alt+f alt+n`           | Next Find Match / Next Selection Match (Current Editor)    |
+| `alt+f alt+shift+n`     | Previous Find Match / Previous Selection Match             |
+| `alt+o s`               | Show All Symbols                                           |
+| `alt+o alt+s`           | Go to Symbol in File                                       |
+| `alt+o f`               | Quick Text Search                                          |
 | `alt+o alt+f`           | Open New Search Editor                                     |
 | `alt+o shift+f`         | Open New Search Editor to the Side                         |
 | `alt+m f`               | Focus Search View / Find in Files                          |
 
-## UI Controls & View Management
+## Focus (`alt+f` prefix)
 
-| Key                     | Action                                                 |
-| ----------------------- | ------------------------------------------------------ |
-| `capslock`              | Toggle Minimap visibility                              |
-| `alt+m l`               | Toggle Primary Sidebar visibility                      |
-| `alt+m j`               | Toggle Panel visibility (bottom)                       |
-| `alt+m shift+j`         | Toggle Maximized Panel                                 |
-| `alt+m h`               | Toggle Auxiliary Bar visibility (side)                 |
-| `alt+m c`               | Toggle Centered Editor Layout                          |
-| `alt+m m`/`alt+m alt+m` | Customize Layout                                       |
-| `alt+o l`               | Customize Layout                                       |
-| `alt+m shift+m`         | Move View (e.g., Panel to Sidebar)                     |
-| `alt+m g`               | Toggle Editor Widths (Split Vertically?)               |
-| `alt+m e`               | Focus Explorer View                                    |
-| `alt+m shift+e`         | Maximize Editor & Hide Sidebar                         |
-| `alt+m s`               | Focus SCM View                                         |
-| `alt+m o`               | Focus Outline View                                     |
-| `alt+m shift+o`         | Focus Output Panel                                     |
-| `ctrl+shift+alt+0`      | Reset Workbench Zoom                                   |
-| `ctrl+shift+alt+=`/`-`  | Workbench Zoom In/Out                                  |
-| `alt+a alt+s`           | Toggle Locked Scrolling (Sync Scrolling)               |
-| `alt+v alt+v`           | Vim Command Line Quick Pick                            |
-| `alt+v v`               | Toggle Vim On/Off (`toggleVim`)                        |
-| `alt+o shift+r`         | Reload Window                                          |
-| `alt+f e`               | Focus First Editor Group                               |
-| `alt+f r`               | Focus Open Editors View (when active)                  |
-| `alt+f o`               | Focus Outline View                                     |
-| `alt+f b`               | Focus Breadcrumbs                                      |
-| `alt+f a`               | Focus Activity Bar                                     |
-| `alt+f s`               | Focus Sticky Scroll / Select Editor from Sticky Scroll |
-| `alt+f d`               | Focus Status Bar                                       |
-| `alt+f t`               | Focus Terminal Tabs View                               |
+| Key           | Action                                                 |
+| ------------- | ------------------------------------------------------ |
+| `alt+f e`     | Focus First Editor Group / Show Active File in Explorer |
+| `alt+f r`     | Focus Open Editors View (when active)                  |
+| `alt+f o`     | Focus Outline View                                     |
+| `alt+f b`     | Focus Breadcrumbs                                      |
+| `alt+f a`     | Focus Activity Bar                                     |
+| `alt+f s`     | Focus Sticky Scroll / Select Editor from Sticky Scroll |
+| `alt+f d`     | Focus Status Bar                                       |
+| `alt+f t`     | Focus Terminal Tabs View                               |
+| `alt+f v`     | Focus Roo-cline Input                                  |
+| `alt+f c`     | Open Claude Code Editor                                |
+| `alt+f alt+c` | Open Claude Code Sidebar                               |
+
+### Breadcrumbs Navigation (When Breadcrumbs Active)
+
+| Key     | Action                |
+| ------- | --------------------- |
+| `alt+l` | Focus Next Breadcrumb |
+| `alt+h` | Focus Previous Breadcrumb |
+
+### Sticky Scroll Navigation (When Sticky Scroll Focused)
+
+| Key   | Action                                   |
+| ----- | ---------------------------------------- |
+| `j`   | Select Next Sticky Scroll Line           |
+| `k`   | Select Previous Sticky Scroll Line       |
+| `l`   | Go to Focused Sticky Scroll Line         |
+| `h`   | Collapse (tree sticky scroll)            |
+| `alt+f s` | Return to Editor from Sticky Scroll  |
+
+### Status Bar Navigation (When Status Bar Focused)
+
+| Key | Action               |
+| --- | -------------------- |
+| `k` | Focus Next Item      |
+| `j` | Focus Previous Item  |
+
+## UI Controls & View Management (`alt+m` prefix)
+
+| Key                     | Action                                   |
+| ----------------------- | ---------------------------------------- |
+| `alt+m l`               | Toggle Primary Sidebar visibility        |
+| `alt+m j`               | Toggle Panel visibility (bottom)         |
+| `alt+m shift+j`         | Toggle Maximized Panel                   |
+| `alt+m h`               | Toggle Auxiliary Bar visibility (side)   |
+| `alt+m c`               | Toggle Centered Editor Layout            |
+| `alt+m m`/`alt+m alt+m` | Customize Layout                         |
+| `alt+m shift+m`         | Move View (e.g., Panel to Sidebar)       |
+| `alt+m g`               | Toggle Editor Widths                     |
+| `alt+m e`               | Focus Explorer View                      |
+| `alt+m shift+e`         | Maximize Editor & Hide Sidebar           |
+| `alt+m s`               | Focus SCM View                           |
+| `alt+m o`               | Focus Outline View                       |
+| `alt+m shift+o`         | Focus Output Panel                       |
+| `alt+m f`               | Focus Search View                        |
+| `alt+m r`               | Focus Roo-cline Activity Bar             |
+| `alt+m v`               | Focus Roo-cline Activity Bar             |
+| `alt+m shift+c`         | Open Chat in Editor                      |
+| `alt+m alt+e`           | Focus Chat Editing Panel                 |
+| `alt+m alt+c`           | Focus Copilot Chat Panel                 |
+| `alt+m n`               | Move Editor to New Window                |
+| `alt+m shift+n`         | Copy Editor to New Window                |
+| `ctrl+shift+alt+0`      | Reset Workbench Zoom                     |
+| `ctrl+shift+alt+=`/`-`  | Workbench Zoom In/Out                    |
+
+## Copilot / AI Chat (`alt+e` prefix)
+
+| Key              | Action                                          |
+| ---------------- | ----------------------------------------------- |
+| `alt+e e`        | Open Edit Session                               |
+| `alt+e alt+e`    | Focus Chat Editing Panel                        |
+| `alt+e alt+c`    | Focus Copilot Chat Panel                        |
+| `alt+e i`        | Start/Close Inline Chat (editor or terminal)    |
+| `alt+e o`        | Open Copilot Suggestions Panel                  |
+| `alt+e a`        | Accept Copilot Panel Solution                   |
+| `alt+e j`/`k`    | Next/Previous Copilot Panel Solution            |
+| `alt+e v`        | Attach Selection to Copilot Edits               |
+| `alt+e alt+v`    | Attach Selection to Copilot Chat                |
+| `alt+e c`        | Chat Command Palette (`>chat `)                 |
+| `alt+e shift+c`  | Open Chat in Editor                             |
+
+## Gemini (`alt+g` prefix)
+
+| Key                  | Action                                  |
+| -------------------- | --------------------------------------- |
+| `alt+g f`            | Focus Gemini Chat Sidebar               |
+| `alt+g g`            | Gemini Inline Edit (in editor)          |
+| `alt+g alt+g`        | Gemini Generate Code                    |
+| `alt+g alt+i`        | Gemini Generate Code                    |
+| `alt+g a`            | Accept Gemini Diff                      |
+| `alt+g d`            | Reject Gemini Diff                      |
+| `alt+g shift+a`      | Add File to Gemini Context              |
+| `alt+g shift+alt+a`  | Add Files to Gemini Context             |
+| `alt+g v`            | Add Snippet to Gemini Context           |
+| `alt+g alt+a`        | Add Snippet to Gemini Context           |
+| `alt+g alt+n`        | New Gemini Chat                         |
+| `alt+g alt+r`        | Resume Gemini Chat                      |
+| `alt+g c`            | Gemini Command Palette (`>gemini `)     |
+| `alt+g alt+s`        | Accept/Start Gemini Next Edit           |
+| `alt+q`              | Cancel Gemini Diff                      |
+
+## Roo-cline (`alt+v` prefix)
+
+| Key           | Action                         |
+| ------------- | ------------------------------ |
+| `alt+v t`     | Open Roo-cline in New Tab      |
+| `alt+v n`     | New Roo-cline Conversation     |
+| `alt+v alt+n` | New Roo-cline Task             |
+| `alt+v o`     | Popout Roo-cline               |
+| `alt+v p`     | Roo-cline Prompts              |
+| `alt+v a`     | Add to Roo-cline Context       |
+| `alt+v e`     | Explain Code (Roo-cline)       |
+| `alt+v f`     | Fix Code (Roo-cline)           |
+| `alt+v i`     | Improve Code (Roo-cline)       |
+| `alt+v alt+v` | Vim Command Line Quick Pick    |
+| `alt+v v`     | Toggle Vim On/Off (`toggleVim`)|
 
 ## Folding (Standard VSCode/Vim)
 
@@ -416,17 +531,21 @@ _Apply after an operator like `d`, `c`, `y`._
 | Key          | Action                         |
 | ------------ | ------------------------------ |
 | `ctrl+n`/`p` | Focus Next/Previous Suggestion |
+| `alt+j`/`k`  | Focus Next/Previous Suggestion |
 
 ## Leader Keybindings
+
 | Key | Action |
 |---|---|
+| **Find / Search** | |
 | `<leader>e` | Toggle Explorer |
-| `<leader>fe` | Find in files |
+| `<leader>fe` | Find in editor |
 | `<leader>ff` | Search in files |
 | `<leader>fo` | Quick text search |
 | `<leader>fO` | Open new search editor |
 | `<leader>fa` | Select all occurrences of find match |
 | `<leader>fs` | Go to source control |
+| **Navigation** | |
 | `<leader>t` | Toggle terminal |
 | `<leader>o` | Go to file |
 | `<leader>p` | Show all commands |
@@ -436,35 +555,26 @@ _Apply after an operator like `d`, `c`, `y`._
 | `<leader>j` | Open previous recently used editor |
 | `<leader>k` | Open next recently used editor |
 | `<leader>J` | Open previous editor from history |
+| `<leader>%` | Match Emmet tag |
+| **Window / Split** | |
 | `<leader>wv` | Split editor right |
 | `<leader>ws` | Split editor down |
-| `<leader>wk` | Navigate up |
-| `<leader>wj` | Navigate down |
-| `<leader>wh` | Navigate left |
-| `<leader>wl` | Navigate right |
+| `<leader>wk`/`j`/`h`/`l` | Navigate up/down/left/right |
 | `<leader>we` | Minimize other editors |
 | `<leader>wE` | Minimize other editors and hide sidebar |
 | `<leader>wM` | Maximize editor and hide sidebar |
 | `<leader>wm` | Toggle maximize editor group |
 | `<leader>wr` | Even editor widths |
 | `<leader>wt` | Toggle editor widths |
-| `<leader>wmk` | Move editor to above group |
-| `<leader>wmj` | Move editor to below group |
-| `<leader>wmh` | Move editor to left group |
-| `<leader>wml` | Move editor to right group |
+| `<leader>wmk`/`j`/`h`/`l` | Move editor to above/below/left/right group |
 | `<leader>wo` | Toggle editor group lock |
 | `<leader>wP` | Pin editor |
 | `<leader>wU` | Unpin editor |
-| `<leader>w1` | Focus first editor group |
-| `<leader>w2` | Focus second editor group |
-| `<leader>w3` | Focus third editor group |
-| `<leader>w4` | Focus fourth editor group |
-| `<leader>wH` | New group left and quick open |
-| `<leader>wL` | New group right and quick open |
-| `<leader>wK` | New group above and quick open |
-| `<leader>wJ` | New group below and quick open |
+| `<leader>w1`/`2`/`3`/`4` | Focus editor group 1/2/3/4 |
+| `<leader>wH`/`L`/`K`/`J` | New group left/right/above/below and quick open |
 | `<leader>wn` | Focus next group |
 | `<leader>wp` | Focus previous group |
+| **Code Actions** | |
 | `<leader>cr` | Rename |
 | `<leader>ca` | Source action |
 | `<leader>cq` | Quick fix |
@@ -472,8 +582,9 @@ _Apply after an operator like `d`, `c`, `y`._
 | `<leader>=` | Format document |
 | `<leader>=s` | Format selection |
 | `<leader>r` | Rename |
+| `<leader>cn` | Add selection to next find match |
+| `<leader>cp` | Add selection to previous find match |
+| **Buffer** | |
 | `<leader>bq` | Close active editor |
 | `<leader>br` | Reopen closed editor |
 | `<leader>bQ` | Close all groups |
-| `<leader>cn` | Add selection to next find match |
-| `<leader>cp` | Add selection to previous find match |

@@ -223,22 +223,12 @@
     // "when": "isInDiffEditor && !operationInProgress"
   },
   {
-    "key": "alt+s u",
-    "command": "git.unstageSelectedRanges",
-    // "when": "isInDiffEditor && !operationInProgress"
-  },
-  {
     "key": "alt+s alt+u",
     "command": "git.unstage",
   },
   {
     "key": "alt+s shift+u",
     "command": "git.unstageAll",
-  },
-  {
-    "key": "alt+s alt+u",
-    "command": "git.unstage",
-    // "when": "!operationInProgress"
   },
   {
     "key": "alt+s k",
@@ -1444,7 +1434,7 @@
   {
     "key": "alt+f alt+n",
     "command": "editor.action.nextSelectionMatchFindAction",
-    "when": "editorFocus",
+    "when": "editorHasSelection && editorFocus",
   },
   {
     "key": "alt+f alt+shift+n",
@@ -1591,11 +1581,6 @@
   // },
   {
     "key": "alt+t c",
-    "command": "workbench.action.terminal.clear",
-    "when": "terminalHasBeenCreated || terminalProcessSupported",
-  },
-  {
-    "key": "alt+t r",
     "command": "workbench.action.terminal.clear",
     "when": "terminalHasBeenCreated || terminalProcessSupported",
   },
@@ -2352,11 +2337,6 @@
     "key": "alt+j",
     "command": "focusNextRenameSuggestion",
     "when": "renameInputVisible",
-  },
-  {
-    "key": "alt+j",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && vim.active && !editorReadonly && !suggestWidgetVisible && vim.mode == 'Insert'",
   },
   {
     "key": "alt+j",

@@ -290,15 +290,6 @@
     {
       "before": [
         "g",
-        "q"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ],
-    },
-    {
-      "before": [
-        "g",
         "H"
       ],
       "commands": [
@@ -312,15 +303,6 @@
       ],
       "commands": [
         "editor.action.referenceSearch.trigger"
-      ],
-    },
-    {
-      "before": [
-        "g",
-        "f"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
       ],
     },
     {
@@ -1134,15 +1116,6 @@
       ],
       "commands": [
         "editor.action.referenceSearch.trigger"
-      ],
-    },
-    {
-      "before": [
-        "g",
-        "f"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
       ],
     },
     {
